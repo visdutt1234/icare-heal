@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01-Doctor-meeting - Expand-Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-2.css">
+</head>
+<body class="grayBg">
+	<header class="headerTop headerFull">
+		<div class="row align-items-center">
+			<div class="col-3">
+				<a href="#"><img src="images/logo-small.svg" alt="" title="" />
+			</div>
+			<div class="col-9"> 
+			<ul>
+				<li>
+					<a href="#" data-toggle="modal" data-target="#faqModal"><i class="bi bi-question-circle-fill"></i></a>
+				</li>	
+				<li>
+					<a href="#" data-toggle="modal" data-target="#settingModal"><i class="bi bi-gear-fill"></i></a>
+				</li>
+				<li>
+					<a href="#" data-toggle="modal" data-target="#notificationModal"><i class="bi bi-bell-fill"></i></a>
+				</li>	
+				<li class="lang">
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="images/en.svg" alt="English" title="English" /> En</a>
+					  <div class="dropdown-menu">
+					    <a class="dropdown-item" href="#">Link 1</a>
+					    <a class="dropdown-item" href="#">Link 2</a>
+					    <a class="dropdown-item" href="#">Link 3</a>
+					  </div>
+				</li>
+				<li class="profileOption">
+					<a href="#" data-toggle="dropdown">
+						<span class="iconWithBg"><i class="bi bi-person-fill"></i></span>
+						<i class="bi bi-chevron-down"></i>
+					</a>
+					<div class="dropdown-menu">
+					    <a class="dropdown-item" href="#">Profile</a>
+					    <a class="dropdown-item" href="#">Link 2</a>
+					    <a class="dropdown-item" href="#">Link 3</a>
+					  </div>
+				</li> 
+			</ul>
+			</div>
+		</div> 
+	</header>
+
+	<div class="sideBlueMenu">
+		<ul class="adminMenu">
+			<li>
+				<a href="#"><i class="far fa-calendar-alt"></i>Calendar</a>
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-desktop"></i>Monitor</a> 
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-globe"></i>Website</a> 
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-folder-open"></i>Files</a> 
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-users"></i>Team</a> 
+			</li>
+			<li class="active">
+				<a href="#"><i class="fas fa-user-injured"></i>Patient</a> 
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-tenge"></i>More</a> 
+			</li>
+		</ul>
+	</div>
+
+	<div class="container patientRecordWrpr">
+		<!-- Section: Live preview -->
+            
+            <!-- Section: Live preview -->
+		<div class="wrapperBG">	
+			<div class="sduleExpHeader">
+				<div class="sduleExpHeaderMobi">					
+					<div class="title"><a href="#" class="closebtn"><img src="images/back-icon-close.svg"></a>Schedule</div>
+					<button type="button" class="edit-btn">
+		                <i class="icon-cal-pencil"></i>
+		            </button>
+		            <button type="button" class="btn btn-primary calBtn-primary joinNowbtn">
+		            	<span class="icon fas fa-video"></span>Join Now</button>
+				</div>
+				<ul class="nav nav-tabs customTabs" id="myTab" role="tablist">
+				  <li class="nav-item">
+				    <a class="nav-link active" id="ScheduleDetails-tab" data-toggle="tab" href="#ScheduleDetails" role="tab" aria-controls="ScheduleDetails" aria-selected="true">Schedule Details</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="ScheduleChat-tab" data-toggle="tab" href="#ScheduleChat" role="tab" aria-controls="ScheduleChat" aria-selected="false">Chat</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="PatientOverview-tab" data-toggle="tab" href="#PatientOverview" role="tab" aria-controls="PatientOverview" aria-selected="false">Patient Overview</a>
+				  </li>	
+				  <div class=buttonsRightSide>
+					  	<button type="button" class="btn btn-primary calBtn-primary joinNowbtn"><span
+			                    class="icon fas fa-video"></span>Join Now</button>
+			            <button type="button" class="edit-btn">
+			                <i class="icon-cal-pencil"></i>
+			            </button>
+			            <button class="btn-close">Close</button>
+				  </div>
+				</ul>	
+			</div>	 		
+			<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active" id="ScheduleDetails" role="tabpanel" aria-labelledby="ScheduleDetails-tab">
+				  	<div class="row sduleExpdWrpr">
+				  		<div class="col-12 col-xl-8 col-lg-8">
+							<div class="sduleExpdOvrView">
+								<div class="images">
+									<img src="images/kishor-pp.png" alt="" title="" class="img-fluid" />
+								</div>
+								<div class="holder">
+									<span class="idtag">ID : 10050333</span>
+									<h2>Kishor Shah <span class="age">- 22 yrs</span><span class="idtag">ID : 10050333</span></h2>
+									<div class="address">C 63, A, Panch Batti, C Scheme,  Jaipur, Rajasthan 302001</div>
+									<div class="timesNdDay">
+										<span>Wed 02 Feb</span>
+										<span>08:00 AM - 09:00 AM</span>
+									</div>
+									<span class="accepted">Accepted</span>
+									<span class="nonMember">Non Member</span>
+								</div>
+								<div class="sduleExpdDrListsBox d-block d-sm-none">
+									<div class="sduleExpdDrItem">
+										<div class="title">Dr. Nikhil Sanchar <span>Physiotherapist - B.P.T, M.IA.P, MS</span></div>
+										<div class="image"><img src="images/Amar-Singh-pp.png" alt=""></div>
+									</div>
+								</div>
+							</div>
+							<div class="sduleExpdDesrp">
+								<span class="icon icon-new-description"></span>
+								<h2>Meeting Description</h2>
+								<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+							</div>
+							<div class="sduleExpdComplnt">
+								<span class="icon icon-Diagnosis-full-fill"></span>
+								<h2><span>Patient Complaint</span>Laser Skin Resurfacing</h2>
+							</div>
+							<div class="sduleExpdFiles">
+								<span class="icon icon-new-file"></span>
+								<h2>Files</h2>
+								<ul>
+									<li>
+										<div class="sduleExpdFileCard">
+											<div class="topBox">
+												<img src="images/image-22.jpg" alt="">
+											</div>
+											<h4><span class="icon-new-doc"></span>Lab Test Reports1</h4>
+										</div>
+									</li>
+									<li>
+										<div class="sduleExpdFileCard">
+											<div class="topBox">
+												<img src="images/image-22.jpg" alt="">
+											</div>
+											<h4><span class="icon-new-image"></span>Lab Test Reports 2</h4>
+										</div>
+									</li>
+									<li>
+										<div class="sduleExpdFileCard">
+											<div class="topBox">
+												<img src="images/image-22.jpg" alt="">
+											</div>
+											<h4><span class="icon-new-xd"></span>Lab Test Reports 3</h4>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-xl-4 col-lg-4 d-none d-sm-block">
+							<div class="sduleExpdDrListsBox">
+								<div class="sduleExpdDrItem">
+									<div class="title">Dr. Nikhil Sanchar <span>Physiotherapist - B.P.T, M.IA.P, MS</span></div>
+									<div class="image"><img src="images/Amar-Singh-pp.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+				  	</div>
+				  </div>
+				  <div class="tab-pane fade" id="ScheduleChat" role="tabpanel" aria-labelledby="ScheduleChat-tab">
+				  	<h2>Chat</h2>
+				  </div>
+				  <div class="tab-pane fade" id="PatientOverview" role="tabpanel" aria-labelledby="PatientOverview-tab">
+					<div class="row">
+						<div class="col-12 col-xl-9 col-lg-9 patientOviewLeft">
+							<div class="patientOviewCard">
+								<div class="patientOviewTop">
+									<div class="patientImage">
+										<img src="images/kishor-pp.png" alt="" title="" class="img-fluid" />
+									</div>
+									<div class="patientHolder">
+										<!-- <div class="patientLinks">
+											<a href="" class="patientEdits"><i class="fas fa-pen"></i></a>
+											<a href="" class="patientEdits"><i class="fas fa-calendar-day"></i></a>
+											<a href="" class="patientEdits"><i class="icon-invoice"></i></a>
+										</div> -->
+										<h3>Kishor Shah<span class="patientId">ID : 10050364</span></h3>
+										<div class="patientSorts"><span>Male</span><span>Married</span><span>10 Feb, 1985</span></div>
+										<ul class="patientContacts">
+											<li><i class="fas fa-phone-alt"></i>+91 8233 841 132</li>
+											<li><i class="fas fa-envelope"></i>kishor.shah@gmail.com</li>
+											<li><i class="bi bi-geo-alt-fill"></i>C 63, A, Panch Batti, C Scheme,  Jaipur, Rajasthan 302001</li>
+										</ul>
+									</div>
+								</div>
+								<ul class="patientMeasurement">
+									<li><span class="title">Height</span>180<span class="measuresUnit">CM</span></li>
+									<li><span class="title">Weight</span>72<span class="measuresUnit">kg</span></li>
+									<li><span class="title">BMI</span>22.2</li>
+									<li><span class="title">Waist</span>81<span class="measuresUnit">CM</span></li>
+									<li><span class="title">Blood</span>B+</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-xl-3 col-lg-3 patientOviewRight">
+							<h2 class="patientOverTitle"><i class="icon icon-family"></i>Family</h2>
+							<div class="patientOviewCard patientFamilyCard">
+								<h2 class="patientOverTitle"><i class="icon icon-family"></i>Family</h2>
+								<div class="thin_scroll">
+									<div class="patientOviewTop">
+										<div class="patientImage">
+											<img src="images/Santosh-Shah.png" alt="" title="" class="img-fluid" />
+										</div>
+										<div class="patientHolder">
+											<h3>Santosh Shah</h3>
+											<div class="patientSorts"><span>Father</span><span>58 years old</span></div>
+											<div class="patientUpdates">Update: 05:02 PM Jan 04, 2021</div>
+										</div>
+									</div>
+									<div class="patientOviewTop">
+										<div class="patientImage">
+											<img src="images/Ritu-shah.png" alt="" title="" class="img-fluid" />
+										</div>
+										<div class="patientHolder">
+											<h3>Ritu Shah</h3>        
+											<div class="patientSorts"><span>Mother</span><span>55 years old</span></div>
+											<div class="patientUpdates">Update: 05:02 PM Jan 04, 2021</div>
+										</div>
+									</div>
+									<div class="patientOviewTop">
+										<div class="patientImage">
+											<img src="images/Amar-Singh-pp.png" alt="" title="" class="img-fluid" />
+										</div>
+										<div class="patientHolder">
+											<h3>Mukesh Shah</h3>
+											<div class="patientSorts"><span>Brother</span><span>28 years old</span></div>
+											<div class="patientUpdates">Update: 05:02 PM Jan 04, 2021</div>
+										</div>
+									</div>							
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-xl-3 col-lg-3 patientAlergBox">
+							<h2 class="patientOverTitle"><i class="icon icon-Allergies"></i>Allergies</h2>
+							<ul class="patientAllergies">
+								<div class="thin_scroll">
+									<li>Chamomile Blossom <span class="status">Status:<span class="medium"><i class="icon-emoji-medium"></i>Medium</span></span></li>
+									<li>Animal Hair <span class="status">Status:<span class="low"><i class="icon-emoji-low"></i>Low</span></span></li>
+									<li>Acetylsalicylic acid<span class="status">Status:<span class="high"><i class="icon-emoji-high"></i>High</span></span></li>
+									<li>Chamomile Blossom <span class="status">Status:<span class="medium"><i class="icon-emoji-medium"></i>Medium</span></span></li>
+								</div>
+							</ul>
+						</div>
+						<div class="col-12 col-xl-6 col-lg-6 patientSocialBox">
+							<h2 class="patientOverTitle"><i class="icon icon-social-history"></i>Social History</h2>
+							<div class="patientOverPara">
+								<div class="thin_scroll">
+									<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>							
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-xl-3 col-lg-3 patientContraBox">
+							<h2 class="patientOverTitle"><i class="icon icon-contraindictions"></i>Contraindictions</h2>
+							<div class="patientOverPara">
+								<div class="thin_scroll">
+									<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown.</p>							
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="patientHlthRecdWrpr">
+						<h2 class="patientOverTitle"><i class="icon icon-health-records"></i>Health Records</h2>
+						<a href="#" class="patientFilter" data-toggle="modal" data-target="#patOvrFilterPopupID"><i class="icon-filter"></i></a>
+						<ul class="patientHealthBlock">
+							<li>
+								 <span class="time">9:12 AM Jan 05, 2021</span>
+								 <div class="patientHealthCard">
+								 	<div class="patientHlInfo">
+								 		<div class="patientHlimage">
+								 			<img src="images/Amar-Singh-pp.png" alt="">
+								 			<span class="icon"><i class="fas fa-video"></i></span>
+								 		</div>
+								 		<div class="patientHlholder">
+								 			<h4>Dr. Nikhil Sanchar</h4>
+								 			<span><i class="icon-cal-heart-line"></i>Laser Skin Resurfacing</span>
+								 		</div>						 		
+								 	</div>
+								 	<div class="patientHlEmr">
+									 	<span class="emrLeft">EMR
+									 		<span>
+									 			<a href="#"><i class="icon-symptoms"></i></a>
+									 			<a href="#"><i class="icon-vital"></i></a>
+									 			<a href="#"><i class="icon-Note"></i></a>
+									 			<a href="#"><i class="icon-Diagnosis"></i></a>
+									 			<a href="#"><i class="icon-Investigations"></i></a>
+									 			<a href="#"><i class="icon-pill"></i></a>
+									 		</span>
+									 	</span>
+									 	<span class="emrRight">
+									 		<a href="#"><i class="icon-Play"></i></a>
+									 	</span>
+									 </div>
+									 <div class="patientHlFile">
+									 	<a href="#" class="icon"><i class="icon-PDF"></i></a>
+									 	<h4>Lab Test Reports<span><i class="icon-upload"></i>Patient</span></h4>
+									 </div>
+									 <div class="patientHlLast"><a href="#" data-toggle="modal" data-target="#PatientEMRPopUpModel"><i class="icon-view"></i></a></div>
+								 </div>						 
+							</li>
+							<li>
+								 <span class="time">9:12 AM Jan 05, 2021</span>
+								 <div class="patientHealthCard">
+								 	<div class="patientHlInfo">
+								 		<div class="patientHlimage">
+								 			<img src="images/Amar-Singh-pp.png" alt="">
+								 			<span class="icon"><i class="fas fa-video"></i></span>
+								 		</div>
+								 		<div class="patientHlholder">
+								 			<h4>Dr. Nikhil Sanchar</h4>
+								 			<span><i class="icon-cal-heart-line"></i>Laser Skin Resurfacing</span>
+								 		</div>						 		
+								 	</div>
+								 	<div class="patientHlEmr">
+									 	<span class="emrLeft">EMR</span>
+									 	<span class="emrRight">
+									 		<a href="#"><i class="icon-Play"></i></a>
+									 		<a href="#"><i class="icon-PDF"></i></a>
+									 	</span>
+									 </div>
+									 <div class="patientHlFile">
+									 	<a href="#" class="icon"><i class="icon-File-not-uploaded"></i></a>
+									 	<h4>Lab Test Reports<span>File not uploaded</span></h4>
+									 </div>
+									 <div class="patientHlLast"><a href="#" data-toggle="modal" data-target="#PatientEMRPopUpModel"><i class="icon-view"></i></a></div>
+								 </div>						 
+							</li>
+							<li>
+								 <span class="time">9:12 AM Jan 05, 2021</span>
+								 <div class="patientHealthCard">
+								 	<div class="patientHlInfo">
+								 		<div class="patientHlimage">
+								 			<img src="images/Amar-Singh-pp.png" alt="">
+								 			<span class="icon"><i class="fas fa-video"></i></span>
+								 		</div>
+								 		<div class="patientHlholder">
+								 			<h4>Dr. Nikhil Sanchar</h4>
+								 			<span><i class="icon-cal-heart-line"></i>Laser Skin Resurfacing</span>
+								 		</div>						 		
+								 	</div>
+								 	<div class="patientHlEmr">
+									 	<span class="emrLeft">EMR
+									 		<span>
+									 			<a href="#"><i class="icon-symptoms"></i></a>
+									 			<a href="#"><i class="icon-vital"></i></a>
+									 			<a href="#"><i class="icon-Note"></i></a>
+									 			<a href="#"><i class="icon-Diagnosis"></i></a>
+									 			<a href="#"><i class="icon-Investigations"></i></a>
+									 			<a href="#"><i class="icon-pill"></i></a>
+									 		</span>
+									 	</span>
+									 	<span class="emrRight">
+									 		<a href="#"><i class="icon-Play"></i></a>
+									 	</span>
+									 </div>
+									 <div class="patientHlFile">
+									 	<a href="#" class="icon"><i class="icon-PDF"></i></a>
+									 	<h4>Lab Test Reports<span><i class="icon-upload"></i>Patient</span></h4>
+									 </div>
+									 <div class="patientHlLast"><a href="#" data-toggle="modal" data-target="#PatientEMRPopUpModel"><i class="icon-view"></i></a></div>
+								 </div>						 
+							</li>
+							<li>
+								 <span class="time">9:12 AM Jan 05, 2021</span>
+								 <div class="patientHealthCard">
+								 	<div class="patientHlInfo">
+								 		<div class="patientHlimage">
+								 			<img src="images/Amar-Singh-pp.png" alt="">
+								 			<span class="icon"><i class="fas fa-video"></i></span>
+								 		</div>
+								 		<div class="patientHlholder">
+								 			<h4>Dr. Nikhil Sanchar</h4>
+								 			<span><i class="icon-cal-heart-line"></i>Laser Skin Resurfacing</span>
+								 		</div>						 		
+								 	</div>
+								 	<div class="patientHlEmr">
+									 	<span class="emrLeft">EMR
+									 		<span>
+									 			<a href="#"><i class="icon-symptoms"></i></a>
+									 			<a href="#"><i class="icon-vital"></i></a>
+									 			<a href="#"><i class="icon-Note"></i></a>
+									 			<a href="#"><i class="icon-Diagnosis"></i></a>
+									 			<a href="#"><i class="icon-Investigations"></i></a>
+									 			<a href="#"><i class="icon-pill"></i></a>
+									 		</span>
+									 	</span>
+									 	<span class="emrRight">
+									 		<a href="#"><i class="icon-Play"></i></a>
+									 	</span>
+									 </div>
+									 <div class="patientHlFile">
+									 	<a href="#" class="icon"><i class="icon-PDF"></i></a>
+									 	<h4>Lab Test Reports<span><i class="icon-upload"></i>Patient</span></h4>
+									 </div>
+									 <div class="patientHlLast"><a href="#" data-toggle="modal" data-target="#PatientEMRPopUpModel"><i class="icon-view"></i></a></div>
+								 </div>						 
+							</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+	</div>
+	</div>
+
+	<!-- <a href="#" class="seducleFloting addPatientFloting"><i class="icon-subtract"></i></a> -->
+
+	 <!-- 02-Patient-EMR PopUp start here -->
+    <div class="modal fade newSchedulePopUp patientEMRPopUp" id="PatientEMRPopUpModel" tabindex="-1"
+        aria-labelledby="PatientEMRPopUpModelLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content thin_scroll">
+                <div class="modal-header">
+                    <span class="back-icon-close d-block d-sm-none" data-dismiss="modal" aria-label="Close">
+                        <img src="images/back-icon-close.svg">
+                    </span>
+                    <h5 class="modal-title">EMR <span class="time">11:30 AM Dec 28, 2020</span></h5>
+                    <div class="patientLinks d-block d-sm-none">
+						<a href=""><i class="fas fa-pen"></i></a>
+						<a href=""><i class="fas fa-calendar-day"></i></a>
+					</div>	
+                    <button type="button" class="close d-none d-sm-block" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                	<div class="patEmrOverView">
+				 		<div class="patEmrOverImg">
+				 			<img src="images/Amar-Singh-pp.png" alt="">
+				 			<span class="icon"><i class="fas fa-video"></i></span>
+				 		</div>
+				 		<div class="patEmrOverHolder">
+				 			<h4>Dr. Nikhil Sanchar<span class="patEmrId">ID : 10050333</span></h4>
+				 			<span class="designation">Physiotherapist</span>
+				 			<span class="problem"><i class="icon-cal-heart-line"></i>Laser Skin Resurfacing</span>
+				 		</div>
+				 		<div class="patientLinks">
+							<a href=""><i class="fas fa-pen"></i></a>
+							<a href=""><i class="fas fa-calendar-day"></i></a>
+						</div>						 		
+				 	</div>
+				 	<div class="emrTagsBlock">
+				 		<div class="emrSectionTitle">Symptoms</div>
+				 		<ul class="emrTags">
+				 			<li>Pain at your des</li>
+				 			<li>Constant pain</li>
+				 		</ul>
+				 	</div>
+				 	<div class="emrStatistics">
+				 		<div class="emrSectionTitle">Vital Statistics</div>
+				 		<table>
+				 			<thead>
+				 				<th>Vital</th>
+				 				<th>type</th>
+				 				<th>Value</th>
+				 				<th>Unit</th>
+				 			</thead>
+				 			<tbody>
+				 				<tr>
+				 					<td>BP Record</td>
+				 					<td>Systolic</td>
+				 					<td>90/130</td>
+				 					<td>mmHg</td>
+				 				</tr>
+				 				<tr>
+				 					<td>Axillary</td>
+				 					<td>Systolic</td>
+				 					<td>88</td>
+				 					<td> F/NaN  C </td>
+				 				</tr>
+				 			</tbody>
+				 		</table>
+				 	</div>
+				 	<div class="emrTagsBlock">
+				 		<div class="emrSectionTitle">Diagnosis</div>
+				 		<ul class="emrTags">
+				 			<li>Depression - PHQ-9</li>
+				 			<li>Anxiety -GAD 7</li>
+				 		</ul>
+				 	</div>
+				 	<div class="emrNotes">
+				 		<div class="emrSectionTitle">Clinical Notes</div>
+				 		<p>Patient having severe sinusitis about tow to three months ago with facial discomfort, nasal, eye pain, and postnasal drip symptoms.</p>
+				 	</div>
+				 	<div class="emrLabTest">
+				 		<div class="emrSectionTitle">Lab Test</div>
+				 		<ul>
+				 			<li>Full Blood Count (FBC) <i class="icon-PDF"></i></li>
+				 			<li>Anxiety -GAD 7 <i class="icon-PDF"></i></li>
+				 		</ul>
+				 	</div>
+				 	<div class="emrMedications">
+				 		<div class="emrSectionTitle">Medications</div>
+				 		<table>
+				 			<thead>
+				 				<th>MD</th>
+				 				<th>Qty</th>
+				 				<th>RTE</th>
+				 				<th>Freq.</th>
+				 				<th>Days</th>
+				 			</thead>
+				 			<tbody>
+				 				<tr>
+				 					<td>Dolo-650</td>
+				 					<td>1 tab</td>
+				 					<td>po</td>
+				 					<td>qd</td>
+				 					<td>3</td>
+				 				</tr>
+				 				<tr>
+				 					<td>Avil-25</td>
+				 					<td>1 tab</td>
+				 					<td>IM</td>
+				 					<td>bid</td>
+				 					<td>5</td>
+				 				</tr>
+				 				<tr>
+				 					<td>Zevit</td>
+				 					<td>1 Cap</td>
+				 					<td>IM</td>
+				 					<td>qd</td>
+				 					<td>15</td>
+				 				</tr>
+				 			</tbody>
+				 		</table>
+				 	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 02-Patient-EMR PopUp end here -->
+
+	<!-- Patient-Overview-Filter end here-->
+    <div class="modal right fade patOvrFilterPopup" tabindex="-1" role="dialog" id="patOvrFilterPopupID" aria-labelledby="patOvrFilterPopupModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">            	
+                <div class="modal-header">
+                	<span class="back-icon-close" data-dismiss="modal" aria-label="Close">
+	                    <img src="images/back-icon-close.svg">
+	                </span>
+                    <h4 class="modal-title">Filter</h4>
+                    <a href="#" class="resetAll">Reset All</a>
+                </div>
+                <div class="modal-body thin_scroll">
+                	<div class="patFilterRadios"> 
+						<div class="form-group">
+							  <div class="custom-control custom-radio custom-control-inline">
+							    <input type="radio" class="custom-control-input" id="male" name="example" value="customEx">
+							    <label class="custom-control-label" for="male">Prescription</label>
+							  </div>
+							  <div class="custom-control custom-radio custom-control-inline">
+							    <input type="radio" class="custom-control-input" id="female" name="example" value="customEx">
+							    <label class="custom-control-label" for="female">Lab Test</label>
+							  </div>
+						</div>
+					</div>
+					<div class="patFilterCard">
+						<div class="form-group">
+							<label>Doctor</label>
+							<select class="form-control customSelect">
+								<option>Dr. Nikhil Sanchar</option>
+								<option>Dr. Nikhil Sanchar 1</option>
+								<option>Dr. Nikhil Sanchar 2</option>
+							</select>
+						</div>
+						<div class="form-group meetingMode">
+							<label>Consultation Mode</label>
+							<ul>
+								<li class="checkboxWithIcon">
+									<input type="checkbox" name="checkbox" value="">
+									<span class="drTagText">All</span>
+									<span class="icon-cal-right"></span>									
+								</li>
+                                <li class="checkboxWithIcon">
+                                	<input type="checkbox" name="checkbox" value="" checked>
+                                    <span class="drTagicon faVideo"><i class="icon fas fa-video"></i></span>
+                                    <span class="icon-cal-right"></span>                                    
+                                </li>
+                                <li class="checkboxWithIcon">
+                                	<input type="checkbox" name="checkbox" value="">
+                                    <span class="drTagicon faPhone"><i class="fas fa-phone-alt"></i></span>
+                                    <span class="icon-cal-right"></span>                                    
+                                </li>
+                                <li class="checkboxWithIcon">
+                                	<input type="checkbox" name="checkbox" value="">
+                                    <span class="drTagicon faChat"><i class="fas fa-comment-alt"></i></span>
+                                    <span class="icon-cal-right"></span>                                    
+                                </li>
+                                <li class="checkboxWithIcon">
+                                	<input type="checkbox" name="checkbox" value="">
+                                    <span class="drTagicon faClinic"><i class="icon-cal-clinic"></i></span>
+                                    <span class="icon-cal-right"></span>                                    
+                                </li>
+                            </ul>
+						</div>
+						<div class="form-group">
+							<label>Compliant</label>
+							<select class="form-control customSelect">
+								<option>Laser Skin Resurfacing</option>
+								<option>option 1</option>
+								<option>option 2</option>
+							</select>
+						</div>
+					</div>
+					<div class="patFromBox">
+						<div class="patFromTitle">From</div>
+						<div class="row">
+							<div class="col-6 col-md-6">
+	                            <div class="form-group">
+	                                <label for="staticEmail" class="col-form-label">From</label>
+	                                 <div class="calendarDay">
+	                                    <i class="fas fa-calendar-day"></i>
+	                                    <input type="text" class="form-control" placeholder="Enter Subject" value="02 Feb, 2021">
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="col-6 col-md-6">
+	                            <div class="form-group">
+	                                <label for="staticEmail" class="col-form-label">To</label>
+	                                 <div class="calendarDay">
+	                                    <i class="fas fa-calendar-day"></i>
+	                                    <input type="text" class="form-control" placeholder="Enter Subject" value="28 Feb, 2021">
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+					</div>
+					<button class="btn btn-primary calBtn-primary">Apply</button>
+                </div>
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div>
+    <!-- Patient-Overview-Filter end here-->
+
+	<!-- Modal Notifications -->
+	<div class="modal right fade" id="notificationModal" tabindex="-1" role="dialog" aria-labelledby="notificationModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel2">Notifications</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+				</div>
+
+				<div class="modal-body">
+					<div class="notificationBar">
+						<div class="DateNotification">
+							<div class="days">Today</div>
+							<div class="notificationItem">
+								<div class="notiIcon"></div>
+								<div class="DD">
+									<h3>Notification Name 1</h3>
+									<span>10:17PM</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+								</div>	
+							</div>
+							<div class="notificationItem">
+								<div class="notiIcon"></div>
+								<div class="DD">
+									<h3>Notification Name 1</h3>
+									<span>10:17PM</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+								</div>	
+							</div>
+						</div>
+						<div class="DateNotification">
+							<div class="days">Yesterday</div>
+							<div class="notificationItem">
+								<div class="notiIcon"></div>
+								<div class="DD">
+									<h3>Notification Name 1</h3>
+									<span>10:17PM</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+								</div>	
+							</div> 
+						</div>
+					</div>
+				</div>
+
+			</div><!-- modal-content -->
+		</div><!-- modal-dialog -->
+	</div><!-- Modal Notifications -->
+
+	<!-- Modal FAQs -->
+	<div class="modal right fade" id="faqModal" tabindex="-1" role="dialog" aria-labelledby="faqModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<h4 class="modal-title">FAQs</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+				</div>
+
+				<div class="modal-body">
+					<div class="faqBar">
+						<div class="searchitems normalSearch">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fas fa-search"></i></span>
+								</div>
+								<input type="text" class="form-control" placeholder="Search">
+								<div class="searchList">
+									<ul class="autocomplete-items-list" role="listbox" style="max-height: 190px;">
+										<li data-mdb-index="0" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li>
+										<li data-mdb-index="1" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li> 
+										<li data-mdb-index="1" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li> 
+										<li data-mdb-index="1" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li> 
+									</ul>
+								</div>	
+							</div>
+						</div>
+
+						<div class="questionTitle">Select Question</div>
+						<div class="selectSearch">Loremipsim dolor sis sit met</div>
+						<ul class="faqList">
+							<li>
+								<h3>This is FAQ question followed by the answer…?</h3>
+								<p>This is thr answer of the above question in detail and explain the question asked in 2 to 4 lines of paragraph.</p>
+							</li>
+							<li>
+								<h3>This is FAQ question followed by the answer…?</h3>
+								<p>This is thr answer of the above question in detail and explain the question asked in 2 to 4 lines of paragraph.</p>
+							</li>
+							<li>
+								<h3>This is FAQ question followed by the answer…?</h3>
+								<p>This is thr answer of the above question in detail and explain the question asked in 2 to 4 lines of paragraph.</p>
+							</li>
+							<li>
+								<h3>This is FAQ question followed by the answer…?</h3>
+								<p>This is thr answer of the above question in detail and explain the question asked in 2 to 4 lines of paragraph.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div><!-- modal-content -->
+		</div><!-- modal-dialog -->
+	</div><!-- Modal FAQs -->
+
+	<!-- Modal Setting -->
+	<div class="modal right fade" id="settingModal" tabindex="-1" role="dialog" aria-labelledby="settingModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<h4 class="modal-title">Setting</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+				</div>
+
+				<div class="modal-body">
+					<div class="faqBar">
+						<div class="searchitems normalSearch">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fas fa-search"></i></span>
+								</div>
+								<input type="text" class="form-control" placeholder="Search">
+								<div class="searchList">
+									<ul class="autocomplete-items-list" role="listbox" style="max-height: 190px;">
+										<li data-mdb-index="0" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li>
+										<li data-mdb-index="1" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li> 
+										<li data-mdb-index="1" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li> 
+										<li data-mdb-index="1" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li> 
+									</ul>
+								</div>	
+							</div>
+						</div>
+
+						<ul class="menuList">
+							<li>
+								<a href="#">Account <i class="fas fa-chevron-right"></i></a>
+							</li>
+							<li>
+								<a href="#">General <i class="fas fa-chevron-right"></i></a>
+							</li>
+							<li>
+								<a href="#">Team <i class="fas fa-chevron-right"></i></a>
+							</li>
+							<li>
+								<a href="#">Calendar <i class="fas fa-chevron-right"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div><!-- modal-content -->
+		</div><!-- modal-dialog -->
+	</div><!-- Modal Setting -->	
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>  
+			  
+</body>
+</html>

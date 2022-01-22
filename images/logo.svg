@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Group_20433" width="133" height="40" viewBox="0 0 133 40">
+    <defs>
+        <style>
+            .cls-2{fill:#46b2a5}.cls-3{fill:#88e2d5}
+        </style>
+    </defs>
+    <text id="icareheal" fill="#0c6aaa" font-family="Quicksand-Medium, Quicksand" font-size="22px" font-weight="500" transform="translate(37 27.722)">
+        <tspan x="0" y="0">icareheal</tspan>
+    </text>
+    <g id="Group_20434">
+        <path id="Rectangle_3570" d="M0 0h11A10 10 0 0 1 1 10H0V0z" class="cls-2" transform="translate(20 10)"/>
+        <path id="Rectangle_3571" d="M0 0h1a10 10 0 0 1 10 10H0V0z" class="cls-3" transform="translate(20)"/>
+        <path id="Rectangle_3572" d="M10 0v10H0A10 10 0 0 1 10 0z" class="cls-2" transform="translate(10)"/>
+        <path id="Rectangle_3573" fill="#1d80b7" d="M0 0H10V10H0z" transform="translate(10 10)"/>
+        <path id="Rectangle_3574" fill="#3994c6" d="M10 0v10H0A10 10 0 0 1 10 0z" transform="translate(0 10)"/>
+        <path id="Rectangle_3575" fill="#197fa3" d="M0 0h10v10A10 10 0 0 1 0 0z" transform="translate(0 20)"/>
+        <path id="Rectangle_3576" fill="#1072b2" d="M0 0H10V10H0z" transform="translate(10 20)"/>
+        <path id="Rectangle_3577" d="M0 0h1a10 10 0 0 1 10 10H0V0z" class="cls-2" transform="translate(20 20)"/>
+        <path id="Rectangle_3578" d="M0 0H11V10H0z" class="cls-3" transform="translate(20 30)"/>
+        <path id="Rectangle_3579" d="M0 0h10v10A10 10 0 0 1 0 0z" class="cls-2" transform="translate(10 30)"/>
+    </g>
+</svg>

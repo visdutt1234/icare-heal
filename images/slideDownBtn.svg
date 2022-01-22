@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #1072b2;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Scroll_Down_Button" data-name="Scroll Down Button" transform="translate(-926 -968.313)">
+    <g id="Down_Icon" data-name="Down Icon" transform="translate(935.519 980.239)">
+      <path id="Down" class="cls-1" d="M8.565,10.571,2,3.967,3.956,2l4.61,4.637L13.175,2l1.956,1.967Z" transform="translate(-2 -2)"/>
+    </g>
+    <g id="Border" class="cls-2" transform="translate(926 968.313)">
+      <circle class="cls-3" cx="16" cy="16" r="16"/>
+      <circle class="cls-4" cx="16" cy="16" r="15.5"/>
+    </g>
+  </g>
+</svg>

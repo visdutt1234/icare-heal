@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-2.css">
+</head>
+
+<body class="grayBg">
+    <header class="headerTop headerFull">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <a href="#"><img src="images/logo-small.svg" alt="" title="" />
+            </div>
+            <div class="col-9">
+                <ul>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#faqModal"><i
+                                class="bi bi-question-circle-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#settingModal"><i class="bi bi-gear-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#notificationModal"><i
+                                class="bi bi-bell-fill"></i></a>
+                    </li>
+                    <li class="lang">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="images/en.svg"
+                                alt="English" title="English" /> En</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="profileOption">
+                        <a href="#" data-toggle="dropdown">
+                            <span class="iconWithBg"><i class="bi bi-person-fill"></i></span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="sideBlueMenu">
+        <ul class="adminMenu">
+            <li class="active">
+                <a href="#"><i class="far fa-calendar-alt"></i>Calendar</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-desktop"></i>Monitor</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-globe"></i>Website</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-folder-open"></i>Files</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-users"></i>Team</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-user-injured"></i>Patient</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-tenge"></i>More</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container CalendarWrpr">
+        <div class="wrapperBG">
+            <div class="filterTop">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-lg-3 col-md-3">
+                            <div class="monthSlider">
+                                <a href="#" class="msPrev"></a>
+                                <a href="#" class="months">Feb <span>2021</span></a>
+                                <a href="#" class="msNext"></a>
+                            </div>
+                        </div>
+                        <div class="col-6 d-none d-block d-sm-none">
+                            <ul class="actions">
+                                <li><img src="images/cal-search-icon.svg"></li>
+                                <li><img src="images/meet-video-icon-black.svg"></li>
+                                <li>
+                                    <div class="dropdown dropleft">
+                                        <span id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false"><img src="images/cal-menu-icon.svg"></span>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Schedule-icon.svg"></span>Schedule</a>
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Day-icon.svg"></span>Day</a>
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Week-icon.svg"></span>Week</a>
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Month-icon.svg"></span>Month</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-9 col-md-9 d-none d-sm-block">
+                            <ul class="actions">
+                                <li class="searchitems normalSearch">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control searchText" placeholder="Search">
+                                        <div class="searchList">
+                                            <ul class="autocomplete-items-list" role="listbox"
+                                                style="max-height: 190px;">
+                                                <li data-mdb-index="0" role="option" class="autocomplete-item">
+                                                    <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                                </li>
+                                                <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                                    <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                                </li>
+                                                <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                                    <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                                </li>
+                                                <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                                    <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn calBtn-secondary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Month</button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Schedule-icon.svg"></span>Schedule</a>
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Day-icon.svg"></span>Day</a>
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Week-icon.svg"></span>Week</a>
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Month-icon.svg"></span>Month</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-outline-primary calBtn-outline"><span
+                                            class="icon fas fa-video"></span>Meet Now</button>
+                                </li>
+                                <li><button type="button" class="btn btn-primary calBtn-primary" data-toggle="modal"
+                                        data-target="#scheduleMeetingModal">+ New Schedule</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calendardays open_modal slideInUp wow" data-wow-duration="1s" data-wow-offset="10"
+                style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
+                <div class="dayname">
+                    <ul class="clearfix">
+                        <li><span class="calDays">Monday</span></li>
+                        <li><span class="calDays">Tuesday</span></li>
+                        <li><span class="calDays">Wednesday</span></li>
+                        <li><span class="calDays">Thursday</span></li>
+                        <li><span class="calDays">Friday</span></li>
+                        <li><span class="calDays">Saturday</span></li>
+                        <li><span class="calDays">Sunday</span></li>
+                    </ul>
+                </div>
+                <ul class="monthbox clearfix">
+                    <li class="notthisMonthDay">
+                        <span class="dateValue">31</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">1</span>
+                        <a href="javascript:void(0)" class="calUserBlock border-left-orange">
+                            <span class="userName text-line-through">Amit Rai</span>
+                            <span class="userTime">08:00 - 09:00 AM</span>
+                        </a>
+                        <a href="javascript:void(0)" class="calUserBlock border-left-red">
+                            <span class="userName text-line-through">Kishor Shah</span>
+                            <span class="userTime">09:00 - 10:00 AM</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="dateValue">2</span>
+                        <a href="javascript:void(0)" class="calUserBlock border-left-skyBlue">
+                            <span class="userName">Raju Sain</span>
+                            <span class="userTime">02:00 - 03:00 PM</span>
+                        </a>
+                        <a href="javascript:void(0)" class="calUserBlock border-left-purple">
+                            <span class="userName text-line-through">Anamika</span>
+                            <span class="userTime">08:00 - 09:00 AM</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <span class="dateValue">3</span>
+                        <span data-toggle="modal" data-target="#schedulesModal"
+                            class="expend-icon d-none d-sm-block"><span class="icon-cal-expend"></span></span>
+                        <a href="javascript:void(0)" class="calUserBlock border-left-purple">
+                            <span class="userName">Ashok Kumawat</span>
+                            <span class="userTime">08:00 - 09:00 AM</span>
+                        </a>
+                        <span class="calMoreUsers">
+                            <span class="clinicBg"></span>
+                            <span class="phisycleBg"></span>
+                            <span class="chatBg"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="dateValue">4</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">5</span>
+                        <a href="javascript:void(0)" class="calUserBlock border-left-purple" id="meetupsModal-1">
+                            <span class="userName">Training</span>
+                            <span class="userTime">06:00 - 07:00 AM</span>
+                            <span class="userProfileP d-none d-sm-block">
+                                <span><img src="images/pp-image-1.png"></span>
+                                <span><img src="images/pp-image-2.png"></span>
+                            </span>
+                            <div class="teamMeetupsPopup d-none">
+                                <div class="teamMTop">
+                                    <span class="title">My Schedule</span>
+                                    <span class="icon-cal-full-expend"></span>
+                                    <div class="teamMBlock">
+                                        <div class="teamMicon">
+                                            <i class="icon-cal-team"></i>
+                                        </div>
+                                        <div class="teamMholder">
+                                            <h2>Team Meetups</h2>
+                                            <div class="teamMTime"><span>Tue 15 Feb</span><span>08:00 AM - 09:00
+                                                    AM</span></div>
+                                            <span class="userProfileP">
+                                                <span><img src="images/pp-image-1.png"></span>
+                                                <span><img src="images/pp-image-2.png"></span>
+                                                <span><img src="images/pp-image-1.png"></span>
+                                                <span><img src="images/pp-image-1.png"></span>
+                                                <span><img src="images/pp-image-2.png"></span>
+                                                <span class="couteVl">2+</span>
+                                            </span>
+                                            <span class="teamMtag">Accepted</span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary calBtn-primary joinNowbtn"><span
+                                            class="icon fas fa-video"></span>Join Now</button>
+                                    <button type="button" class="btn btn-primary calBtn-primary calEdit-btn">
+                                        <i class="icon-cal-share"></i>
+                                    </button>
+                                </div>
+                                <div class="teamMBottom">
+                                    <div class="teamMBitem">
+                                        <span class="calicon"><i class="fas fa-comment-alt"></i></span>
+                                        <span class="teamMText">Chat with team</span>
+                                    </div>
+                                    <div class="teamMBitem">
+                                        <span class="calicon">
+                                            <i class="bi bi-person-fill"></i>
+                                        </span>
+                                        <span class="teamMText">Nikhil Sanchar
+                                            <span class="sortDetails">Physiotherapist - B.P.T, M.IA.P,MS</span>
+                                        </span>
+                                        <span class="createdYou">Organizer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="dateValue">6</span>
+                        <span class="expend-icon d-none d-sm-block"><span class="icon-cal-expend"></span></span>
+                        <a href="javascript:void(0)" class="calUserBlock border-left-purple">
+                            <span class="userName">Sachin Sharma</span>
+                            <span class="userTime">08:00 - 09:00 AM</span>
+                        </a>
+                        <span class="calMoreUsers">
+                            <span class="chatBg"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="dateValue">7</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">8</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">9</span>
+                        <a href="javascript:void(0)" class="calUserBlock border-left-skyBlue" id="meetupsModal-2">
+                            <span class="userName">Kishor Shah</span>
+                            <span class="userTime">08:00 - 09:00 AM</span>
+                            <div class="teamMeetupsPopup d-none">
+                                <div class="teamMTop">
+                                    <span class="title">My Schedule</span>
+                                    <span class="icon-cal-full-expend"></span>
+                                    <div class="teamMBlock">
+                                        <div class="teamMicon teamProfilePic">
+                                            <img src="images/kishor-pp.png">
+                                        </div>
+                                        <div class="teamMholder">
+                                            <h2>Kishor Shah<span> - 22 yrs</span></h2>
+                                            <div class="teamMAdd">C 63, A, Panch Batti, C Scheme, Jaipur, Rajasthan 302001</div> 
+                                            <div class="teamMTime">
+                                                <span>Wed 02 Feb</span>
+                                                <span>08:00 AM - 09:00 AM</span>
+                                            </div>
+                                            <span class="teamMtag">Accepted</span>
+                                            <span class="teamMtag nonMamber">Non Member</span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary calBtn-primary joinNowbtn"><span
+                                            class="icon fas fa-phone-alt"></span>Join Now</button>
+                                    <button type="button" class="btn btn-primary calBtn-primary calEdit-btn">
+                                        <i class="icon-cal-pencil"></i>
+                                    </button>
+                                </div>
+                                <div class="teamMBottom">
+                                    <div class="teamMBitem">
+                                        <span class="calicon"><i class="fas fa-comment-alt"></i></span>
+                                        <span class="teamMText">Chat with team</span></div>
+                                    <div class="teamMBitem">
+                                        <span class="calicon"><i class="icon-cal-heart-line"></i></span>
+                                        <span class="teamMText">
+                                            <span class="patientPrblm">Patient Complaint</span>Laser Skin Resurfacing
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="dateValue">10</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">11</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">12</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">13</span>
+                        <span class="expend-icon d-none d-sm-block"><span class="icon-cal-expend"></span></span>
+                        <a href="javascript:void(0)" class="calUserBlock border-left-purple">
+                            <span class="userName">Sachin Sharma</span>
+                            <span class="userTime">08:00 - 09:00 AM</span>
+                        </a>
+                        <span class="calMoreUsers">
+                            <span class="phisycleBg"></span>
+                            <span class="clinicBg"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="dateValue">14</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">15</span>
+                        <a href="javascript:void(0)" class="calUserBlock border-left-red" id="meetupsModal">
+                            <span class="userName">Team Meetups</span>
+                            <span class="userTime">08:00 - 09:00 AM</span>
+                            <span class="userProfileP d-none d-sm-block">
+                                <span><img src="images/pp-image-1.png"></span>
+                                <span><img src="images/pp-image-2.png"></span>
+                                <span><img src="images/pp-image-1.png"></span>
+                                <span class="couteVl">4+</span>
+                            </span>
+                            <div class="teamMeetupsPopup d-none">
+                                <div class="teamMTop">
+                                    <span class="title">My Schedule</span>
+                                    <span class="icon-cal-full-expend"></span>
+                                    <div class="teamMBlock">
+                                        <div class="teamMicon">
+                                            <i class="icon-cal-team"></i>
+                                        </div>
+                                        <div class="teamMholder">
+                                            <h2>Team Meetups</h2>
+                                            <div class="teamMTime"><span>Tue 15 Feb</span><span>08:00 AM - 09:00
+                                                    AM</span></div>
+                                            <span class="userProfileP">
+                                                <span><img src="images/pp-image-1.png"></span>
+                                                <span><img src="images/pp-image-2.png"></span>
+                                                <span><img src="images/pp-image-1.png"></span>
+                                                <span><img src="images/pp-image-1.png"></span>
+                                                <span><img src="images/pp-image-2.png"></span>
+                                                <span class="couteVl">2+</span>
+                                            </span>
+                                            <span class="teamMtag">Accepted</span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary calBtn-primary joinNowbtn"><span
+                                            class="icon fas fa-video"></span>Join Now</button>
+                                    <button type="button" class="btn btn-primary calBtn-primary calEdit-btn">
+                                        <i class="icon-cal-pencil"></i>
+                                    </button>
+                                </div>
+                                <div class="teamMBottom">
+                                    <div class="teamMBitem">
+                                        <span class="calicon"><i class="fas fa-comment-alt"></i></span>
+                                        <span class="teamMText">Chat with team</span>
+                                    </div>
+                                    <div class="teamMBitem">
+                                        <span class="calicon"><i class="bi bi-person-fill"></i></span>
+                                        <span class="teamMText">Nikhil Sanchar <span class="sortDetails">Physiotherapist - B.P.T, M.IA.P,
+                                                MS</span>
+                                        </span>
+                                        <span class="createdYou">created You</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="dateValue">16</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">17</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">18</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">19</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">20</span>
+                        <a href="javascript:void(0)" class="calUserBlock border-left-purple">
+                            <span class="userName">Sachin Sharma</span>
+                            <span class="userTime">08:00 - 09:00 AM</span>
+                        </a>
+                        <span class="calMoreUsers">
+                            <span class="phisycleBg"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="dateValue">21</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">22</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">23</span>
+                        <a href="javascript:void(0)" class="calUserBlock border-left-skyBlue">
+                            <span class="userName">Kishor Shah</span>
+                            <span class="userTime">08:00 - 09:00 AM</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="dateValue">24</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">25</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">26</span>
+                    </li>
+                    <li>
+                        <span class="dateValue">27</span>
+                        <a href="javascript:void(0)" class="calUserBlock border-left-purple">
+                            <span class="userName">Sachin Sharma</span>
+                            <span class="userTime">08:00 - 09:00 AM</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="dateValue">28</span>
+                    </li>
+                    <li class="notthisMonthDay">
+                        <span class="dateValue">1</span>
+                    </li>
+                    <li class="notthisMonthDay">
+                        <span class="dateValue">2</span>
+                    </li>
+                    <li class="notthisMonthDay">
+                        <span class="dateValue">3</span>
+                    </li>
+                    <li class="notthisMonthDay">
+                        <span class="dateValue">4<span>
+                    </li>
+                    <li class="notthisMonthDay">
+                        <span class="dateValue">5</span>
+                    </li>
+                    <li class="notthisMonthDay">
+                        <span class="dateValue">6</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Schedules Notifications -->
+    <div class="modal right fade calSchedulesModel" id="schedulesModal" tabindex="-1" role="dialog"
+        aria-labelledby="schedulesModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel2">Thursday 3, Feb Schedules</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="searchitems normalSearch">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            </div>
+                            <input type="text" class="form-control searchText" placeholder="Search">
+                            <div class="searchList">
+                                <ul class="autocomplete-items-list" role="listbox" style="max-height: 190px;">
+                                    <li data-mdb-index="0" role="option" class="autocomplete-item">
+                                        <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                    </li>
+                                    <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                        <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                    </li>
+                                    <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                        <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                    </li>
+                                    <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                        <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedulesLists thin_scroll">
+                        <ul>
+                            <li>
+                                <div class="schedulesItem calVvideoCol">
+                                    <span class="schedulesIcon"><i class="icon fas fa-video"></i></span>
+                                    <div class="userName">Ashok Kumawat
+                                        <span>08:00 - 09:00 AM</span>
+                                    </div>
+                                    <span class="schedulesTag">Chemical Peel</span>
+                                    <button class="btn">Join Now</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="schedulesItem calClinicCol">
+                                    <span class="schedulesIcon"><i class="icon-cal-clinic"></i></span>
+                                    <div class="userName">Anamika
+                                        <span>09:00 - 10:00 AM</span>
+                                    </div>
+                                    <span class="schedulesTag">Laser Skin Resurfacing</span>
+                                    <button class="btn">Join Now</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="schedulesItem calPhisycleCol">
+                                    <span class="schedulesIcon"><i class="fas fa-phone-alt"></i></span>
+                                    <div class="userName">Raju Sain
+                                        <span>10:00 - 11:00 AM</span>
+                                    </div>
+                                    <span class="schedulesTag">Skin Treatment</span>
+                                    <button class="btn">Join Now</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="schedulesItem calChatCol">
+                                    <span class="schedulesIcon"><i class="fas fa-comment-alt"></i></span>
+                                    <div class="userName">Sachin Sharma
+                                        <span>06:00 - 07:00 PM</span>
+                                    </div>
+                                    <span class="schedulesTag">Laser Skin Resurfacing</span>
+                                    <button class="btn">Join Now</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="schedulesItem calVvideoCol">
+                                    <span class="schedulesIcon"><i class="icon fas fa-video"></i></span>
+                                    <div class="userName">Ashok Kumawat
+                                        <span>08:00 - 09:00 AM</span>
+                                    </div>
+                                    <span class="schedulesTag">Chemical Peel</span>
+                                    <button class="btn">Join Now</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="schedulesItem calClinicCol">
+                                    <span class="schedulesIcon"><i class="icon-cal-clinic"></i></span>
+                                    <div class="userName">Anamika
+                                        <span>09:00 - 10:00 AM</span>
+                                    </div>
+                                    <span class="schedulesTag">Laser Skin Resurfacing</span>
+                                    <button class="btn">Join Now</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div>
+    <!-- Schedules Notifications -->
+
+    <!-- Modal Notifications -->
+    <div class="modal right fade" id="notificationModal" tabindex="-1" role="dialog"
+        aria-labelledby="notificationModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel2">Notifications</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="notificationBar">
+                        <div class="DateNotification">
+                            <div class="days">Today</div>
+                            <div class="notificationItem">
+                                <div class="notiIcon"></div>
+                                <div class="DD">
+                                    <h3>Notification Name 1</h3>
+                                    <span>10:17PM</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="notificationItem">
+                                <div class="notiIcon"></div>
+                                <div class="DD">
+                                    <h3>Notification Name 1</h3>
+                                    <span>10:17PM</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="DateNotification">
+                            <div class="days">Yesterday</div>
+                            <div class="notificationItem">
+                                <div class="notiIcon"></div>
+                                <div class="DD">
+                                    <h3>Notification Name 1</h3>
+                                    <span>10:17PM</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- Modal Notifications -->
+
+    <!-- Modal FAQs -->
+    <div class="modal right fade" id="faqModal" tabindex="-1" role="dialog" aria-labelledby="faqModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">FAQs</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="faqBar">
+                        <div class="searchitems normalSearch">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="searchList">
+                                    <ul class="autocomplete-items-list" role="listbox" style="max-height: 190px;">
+                                        <li data-mdb-index="0" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                        <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                        <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                        <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="questionTitle">Select Question</div>
+                        <div class="selectSearch">Loremipsim dolor sis sit met</div>
+                        <ul class="faqList">
+                            <li>
+                                <h3>This is FAQ question followed by the answer…?</h3>
+                                <p>This is thr answer of the above question in detail and explain the question asked in
+                                    2 to 4 lines of paragraph.</p>
+                            </li>
+                            <li>
+                                <h3>This is FAQ question followed by the answer…?</h3>
+                                <p>This is thr answer of the above question in detail and explain the question asked in
+                                    2 to 4 lines of paragraph.</p>
+                            </li>
+                            <li>
+                                <h3>This is FAQ question followed by the answer…?</h3>
+                                <p>This is thr answer of the above question in detail and explain the question asked in
+                                    2 to 4 lines of paragraph.</p>
+                            </li>
+                            <li>
+                                <h3>This is FAQ question followed by the answer…?</h3>
+                                <p>This is thr answer of the above question in detail and explain the question asked in
+                                    2 to 4 lines of paragraph.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- Modal FAQs -->
+
+    <!-- Modal Setting -->
+    <div class="modal right fade" id="settingModal" tabindex="-1" role="dialog" aria-labelledby="settingModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Setting</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="faqBar">
+                        <div class="searchitems normalSearch">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="searchList">
+                                    <ul class="autocomplete-items-list" role="listbox" style="max-height: 190px;">
+                                        <li data-mdb-index="0" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                        <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                        <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                        <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="menuList">
+                            <li>
+                                <a href="#">Account <i class="fas fa-chevron-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">General <i class="fas fa-chevron-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">Team <i class="fas fa-chevron-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">Calendar <i class="fas fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- Modal Setting -->
+
+    <!-- Schedule-Meeting modal -->
+    <div class="modal fade newSchedulePopUp" id="scheduleMeetingModal" tabindex="-1"
+        aria-labelledby="scheduleMeetingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content thin_scroll">
+                <div class="modal-header">
+                    <span class="back-icon-close d-block d-sm-none" data-dismiss="modal" aria-label="Close">
+                        <img src="images/back-icon-close.svg">
+                    </span>
+                    <h5 class="modal-title">New Schedule</h5>                    
+                    <button type="button" class="close d-none d-sm-block" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="meetingType">
+                        <label>Participant Type</label>
+                        <li class="current">
+                            <span class="meetingIcon">
+                                <img src="images/ParticipantType-1.jpeg" alt="">
+                            </span>Team</li>
+                        <li>
+                            <span class="meetingIcon">
+                                <img src="images/ParticipantType-2.jpeg" alt="">
+                            </span>Patient</li>
+                    </ul>
+                    <div class="newSchdleForm">
+                        <form>
+                            <div class="form-group">
+                                <label for="staticEmail" class="col-form-label">Subject</label>
+                                <input type="text" class="form-control" placeholder="Enter Subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="staticEmail" class="col-form-label">Add Attendees</label>
+                                <div class="searchfield"><i class="fas fa-search"></i>
+                                    <input type="text" class="form-control" placeholder="Enter">
+                                </div>
+                            </div>
+                            <ul class="reqdAttendees">
+                                <li class="drTag">
+                                <span class="drTagIcon">
+                                    <img src="images/Nikhil-Sanchar.png">
+                                    <span class="drStatus"><img src="images/availibility.svg"></span>
+                                </span>Nikhil Sanchar
+                                <a href="#" class="close-drtag"><i class="bi bi-x-circle-fill"></i></a>
+                            </li>
+                            <li class="drTag">
+                                <span class="drTagIcon">
+                                    <img src="images/Anamika-Sah.png">
+                                    <span class="drStatus"><img src="images/notconframed.svg"></span>
+                                </span>Anamika Sah
+                                <a href="#" class="close-drtag"><i class="bi bi-x-circle-fill"></i></a>
+                            </li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="staticEmail" class="col-form-label">Date</label>
+                                         <div class="calendarDay">
+                                            <i class="fas fa-calendar-day"></i>
+                                            <input type="text" class="form-control" placeholder="Enter Subject" value="Wed 02 Feb, 2021">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="form-group">
+                                        <label for="staticEmail" class="col-form-label">Start Time</label>
+                                        <div class="datefield">
+                                            <i class="fas fa-clock"></i>
+                                            <input type="text" class="form-control" placeholder="Enter Subject" value="10 : 00 AM">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="form-group">
+                                        <label for="staticEmail" class="col-form-label">End Time</label>
+                                        <div class="datefield">
+                                            <i class="fas fa-clock"></i>
+                                            <input type="text" class="form-control" placeholder="Enter Subject" value="10 : 30  AM">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="freeSeminar">
+                                <li class="drText">Free<span class="drHipen">-</span><span>Wed 02 Feb, 2020</span></li>
+                                <li class="drTag">9 : 00  AM  -  9 : 30  AM</li>
+                                <li class="drTag current">10 : 30  AM  -  11 : 00  AM</li>
+                            </ul>
+                            <ul class="meetingMode">
+                                <label>Meeting Mode</label>
+                                <li class="drTag">
+                                    <span class="drTagicon faVideo"><i class="icon fas fa-video"></i></span>
+                                    <span class="modeTxt">Video</span>
+                                </li>
+                                <li class="drTag current">
+                                    <span class="drTagicon faPhone"><i class="fas fa-phone-alt"></i></span>
+                                    <span class="modeTxt">Call</span>
+                                    <span class="icon-cal-right"></span>
+                                </li>
+                                <li class="drTag">
+                                    <span class="drTagicon faChat"><i class="fas fa-comment-alt"></i></span>
+                                    <span class="modeTxt">Chat</span>
+                                </li>
+                                <li class="drTag">
+                                    <span class="drTagicon faClinic"><i class="icon-cal-clinic"></i></span>
+                                    <span class="modeTxt">Clinic</span>
+                                </li>
+                            </ul>
+                            <div class="form-group">
+                            <label for="">Meeting Description</label>
+                            <textarea class="form-control" placeholder="Enter Description"></textarea>
+                          </div>
+                        </form>
+                        <div class="meetingBtnWrpr">
+                            <div class="btn btn-primary addattachmentsBtn">
+                                <i class="fas fa-paperclip"></i>Add attachments
+                                <input type="file" name="">
+                            </div>
+                            <button class="btn btn-primary calBtn-primary">Create Meeting</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Schedule-Meeting modal end -->
+
+    <!-- Meeting-Invitation modal -->
+    <div class="modal newSchedulePopUp meetingInPopup" id="invitionModal" tabindex="-1"
+        aria-labelledby="scheduleMeetingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content thin_scroll">
+                <div class="modal-header">
+                    <span class="back-icon-close d-block d-sm-none" data-dismiss="modal" aria-label="Close">
+                        <img src="images/back-icon-close.svg">
+                    </span>
+                    <h5 class="modal-title">Meeting Invitation</h5>                    
+                    <button type="button" class="close d-none d-sm-block" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="meetingCard">
+                        <div class="meetingTop">
+                            <div class="mtThumb">
+                                <i class="icon-cal-team"></i>
+                            </div>
+                            <div class="mtOrganizer"><span>Organizer</span>Nikhil Sanchar</div>
+                            <div class="mtHolder">                                
+                                <h2><span class="mtHicon">
+                                    <i class="icon fas fa-video"></i>
+                                </span>Team Meetups</h2>
+                                <div class="userProfileP userProfileMobi">
+                                    <span><img src="images/pp-image-1.png"></span>
+                                    <span><img src="images/pp-image-2.png"></span>
+                                    <span><img src="images/image-5.png"></span>
+                                    <span><img src="images/pp-image-2.png"></span>
+                                    <span><img src="images/image-5.png"></span>
+                                </div>
+                                <div class="mtlists">
+                                    <div class="userProfileP">
+                                        <span><img src="images/pp-image-1.png"></span>
+                                        <span><img src="images/pp-image-2.png"></span>
+                                        <span><img src="images/image-5.png"></span>
+                                        <span><img src="images/pp-image-2.png"></span>
+                                        <span><img src="images/image-5.png"></span>
+                                    </div>
+                                    <div class="mtTimes">
+                                        <div class="mtCompIcon">
+                                            <i class="fas fa-calendar-day"></i>
+                                        </div>
+                                        <span>Wed 02 Feb, 2021</span>10:30 AM - 11:00 AM
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meetingMiddle">
+                            <span class="mtMidcon">
+                                <i class="fas fa-comment-alt"></i>
+                            </span>
+                            <div class="mtBusy">
+                                <span class="mtBusyTp"><span>Busy :</span> Patient</span>
+                                <span class="mtDrName">Sachin Sharma 
+                                    <span>Laser Skin Resurfacing</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="meetingBottom">
+                            <button type="button" class="mtAccept">
+                                <i class="fas fa-check-circle"></i><span>Accept</span></button>
+                            <button type="button" class="mtReschedule">
+                                <i class="icon-reschedule"></i><span>Reschedule</span></button>
+                            <button type="button" class="mtDecline">
+                                <i class="icon-close-bg"></i><span>Decline</span></button>
+                        </div>
+                    </div>
+                    <div class="meetingCard">
+                        <div class="meetingTop">
+                            <div class="mtThumb">
+                                <img src="images/kishor-pp.png"/>
+                            </div>
+                            <span class="mtNonMem">Non Member</span>
+                            <div class="mtHolder">                                
+                                <h2><div class="mtHicon mtHicon-message">
+                                    <i class="fas fa-comment-alt"></i>
+                                </div> Kishor Shah <span class="mtYrOldtxt">- 22 yrs</span>
+                                <div class="mtAddress">C 63, A, Panch Batti, C Scheme,  Jaipur, Rajasthan 302001</div>
+                                </h2>
+                                <div class="mtlists">                                    
+                                    <div class="mtComplaint">
+                                        <div class="mtCompIcon">
+                                            <i class="icon-cal-heart-line"></i>
+                                        </div>
+                                        <span>Complaint</span>Laser Skin Resurfacing
+                                    </div>
+                                    <div class="mtTimes">
+                                        <div class="mtCompIcon">
+                                            <i class="fas fa-calendar-day"></i>
+                                        </div>
+                                        <span>Wed 02 Feb, 2021</span>10:30 AM - 11:00 AM
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meetingBottom">
+                            <button type="button" class="mtAccept">
+                                <i class="fas fa-check-circle"></i><span>Accept</span></button>
+                            <button type="button" class="mtReschedule">
+                                <i class="icon-reschedule"></i><span>Reschedule</span></button>
+                            <button type="button" class="mtDecline">
+                                <i class="icon-close-bg"></i><span>Decline</span></button>
+                        </div>
+                    </div>
+                    <div class="meetingCard">
+                        <div class="meetingTop">
+                            <div class="mtThumb">
+                                <img src="images/kishor-pp.png"/>
+                            </div>
+                            <span class="mtNonMem">Non Member</span>
+                            <div class="mtHolder">                                
+                                <h2><div class="mtHicon mtHicon-phone">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div> Kishor Shah <span class="mtYrOldtxt">- 22 yrs</span>
+                                <div class="mtAddress">C 63, A, Panch Batti, C Scheme,  Jaipur, Rajasthan 302001</div>
+                                </h2>
+                                <div class="mtlists">                                    
+                                    <div class="mtComplaint">
+                                        <div class="mtCompIcon">
+                                            <i class="icon-cal-heart-line"></i>
+                                        </div>
+                                        <span>Complaint</span>Laser Skin Resurfacing
+                                    </div>
+                                    <div class="mtTimes">
+                                        <div class="mtCompIcon">
+                                            <i class="fas fa-calendar-day"></i>
+                                        </div>
+                                        <span>Wed 02 Feb, 2021</span>10:30 AM - 11:00 AM
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meetingMiddle">
+                            <span class="mtMidcon">
+                                <i class="fas fa-video"></i>
+                            </span>
+                            <div class="mtBusy">
+                                <span class="mtBusyTp"><span>Busy :</span>Team</span>
+                                <span class="mtDrName">Team Meetups</span>
+                                <div class="userProfileP">
+                                    <span><img src="images/pp-image-1.png"></span>
+                                    <span><img src="images/pp-image-2.png"></span>
+                                    <span><img src="images/image-5.png"></span>
+                                    <span><img src="images/pp-image-2.png"></span>
+                                    <span><img src="images/image-5.png"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meetingBottom">
+                            <button type="button" class="mtAccept">
+                                <i class="fas fa-check-circle"></i><span>Accept</span></button>
+                            <button type="button" class="mtReschedule">
+                                <i class="icon-reschedule"></i><span>Reschedule</span></button>
+                            <button type="button" class="mtDecline">
+                                <i class="icon-close-bg"></i><span>Decline</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Meeting-Invitation modal end -->
+
+    <div class="modal-backdrop fade show"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    <script type="text/javascript">
+
+        $('#meetupsModal, #meetupsModal-1, #meetupsModal-2').click(function (event) {
+            $(this).children(".teamMeetupsPopup").removeClass('d-none');
+            $('.overlay').removeClass('d-none');
+        });
+        $('.overlay').click(function (event) {
+            $('.teamMeetupsPopup').addClass('d-none');
+            $('.overlay').addClass('d-none');
+        })
+
+    </script>
+
+</body>
+
+</html>

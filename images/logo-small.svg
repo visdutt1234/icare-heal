@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="40" viewBox="0 0 31 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #46b2a5;
+      }
+
+      .cls-2 {
+        fill: #88e2d5;
+      }
+
+      .cls-3 {
+        fill: #1d80b7;
+      }
+
+      .cls-4 {
+        fill: #3994c6;
+      }
+
+      .cls-5 {
+        fill: #197fa3;
+      }
+
+      .cls-6 {
+        fill: #1072b2;
+      }
+    </style>
+  </defs>
+  <g id="Group_20896" data-name="Group 20896" transform="translate(-365 -11.121)">
+    <g id="Group_20434" data-name="Group 20434" transform="translate(365 11)">
+      <path id="Rectangle_3570" data-name="Rectangle 3570" class="cls-1" d="M0,0H11a0,0,0,0,1,0,0V0A10,10,0,0,1,1,10H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(20 10.121)"/>
+      <path id="Rectangle_3571" data-name="Rectangle 3571" class="cls-2" d="M0,0H1A10,10,0,0,1,11,10v0a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(20 0.121)"/>
+      <path id="Rectangle_3572" data-name="Rectangle 3572" class="cls-1" d="M10,0h0a0,0,0,0,1,0,0V10a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0v0A10,10,0,0,1,10,0Z" transform="translate(10 0.121)"/>
+      <rect id="Rectangle_3573" data-name="Rectangle 3573" class="cls-3" width="10" height="10" transform="translate(10 10.121)"/>
+      <path id="Rectangle_3574" data-name="Rectangle 3574" class="cls-4" d="M10,0h0a0,0,0,0,1,0,0V10a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0v0A10,10,0,0,1,10,0Z" transform="translate(0 10.121)"/>
+      <path id="Rectangle_3575" data-name="Rectangle 3575" class="cls-5" d="M0,0H10a0,0,0,0,1,0,0V10a0,0,0,0,1,0,0h0A10,10,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(0 20.121)"/>
+      <rect id="Rectangle_3576" data-name="Rectangle 3576" class="cls-6" width="10" height="10" transform="translate(10 20.121)"/>
+      <path id="Rectangle_3577" data-name="Rectangle 3577" class="cls-1" d="M0,0H1A10,10,0,0,1,11,10v0a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(20 20.121)"/>
+      <rect id="Rectangle_3578" data-name="Rectangle 3578" class="cls-2" width="11" height="10" transform="translate(20 30.121)"/>
+      <path id="Rectangle_3579" data-name="Rectangle 3579" class="cls-1" d="M0,0H10a0,0,0,0,1,0,0V10a0,0,0,0,1,0,0h0A10,10,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(10 30.121)"/>
+    </g>
+  </g>
+</svg>

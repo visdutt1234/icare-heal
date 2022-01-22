@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-2.css">
+</head>
+
+<body>
+    <header class="editAboutHeader">
+        <div class="logo"><img src="images/logo.svg"></div>
+        <a class="backToWeb" href="Multiple-Doctor.html"><i><svg fill="none" width="13" viewBox="0 0 13 12" xmlns="http://www.w3.org/2000/svg"> <path d="m2.9529 5.2286h9.3896v1.5428h-9.3896l4.1378 4.1378-1.0908 1.0908-6-6 6-6 1.0908 1.0908-4.1378 4.1378z" fill="#0C6AAA"/></svg></i>Back to website</a>
+    </header>
+    <main class="editAboutMain">
+        <nav class="editAboutNav">
+            <div class="logo"><img src="images/logo.svg"></div>
+            <div class="title">Let’s build your website</div>
+            <ul>
+               <li><a href="#" class="active" title="Upload Logo">Upload Logo</a></li>
+               <li><a href="#" title="Top Banner">Top Banner</a></li> 
+               <li><a href="#" title="About Clinic">About Clinic</a></li>
+               <li><a href="#" title="Specialization">Specialization</a></li>
+               <li><a href="#" title="Team">Team</a></li>
+               <li><a href="#" title="Our Healthcare Services">Our Healthcare Services</a></li>
+               <li><a href="#" title="Testimonials">Testimonials</a></li>
+               <li><a href="#" title="FAQ">FAQ</a></li>
+               <li><a href="#" title="Social Media">Social Media</a></li>
+            </ul>
+        </nav>
+        <div class="editAboutWrpr">
+            <a class="backToWeb d-none d-sm-block" href="Multiple-Doctor.html"><i><svg fill="none" width="13" viewBox="0 0 13 12" xmlns="http://www.w3.org/2000/svg"> <path d="m2.9529 5.2286h9.3896v1.5428h-9.3896l4.1378 4.1378-1.0908 1.0908-6-6 6-6 1.0908 1.0908-4.1378 4.1378z" fill="#0C6AAA"/></svg></i>Back to website</a>
+            <div class="stepsParenet">
+              <div class="UploadLogoWrpr">
+                <h2>Upload Logo</h2>
+                <div class="editGrayBox">                   
+                    <div class="form-group">
+                        <label for="">Upload</label>
+                        <div class="form-control inputUpload">
+                          <input id="myFile" type="file" capture="user" accept="image/*" >
+                          <span class="fileName">Upload file</span>
+                          <i class="icon-upload"></i>
+                        </div>
+                    </div>
+                </div>
+              </div>          
+              <div class="TopBannerWrpr" style="display: none;">
+                  <h2>Top Banner</h2>
+                  <div class="editGrayBox ChangeBanner">                   
+                      <div class="form-group">
+                          <label for="">Change Banner</label>
+                          <ul class="wbSelectBanner row">
+                            <li class="col-6 col-md-4">
+                                <div class="wbSelectBannerCard">
+                                    <img src="images/Select-Banner-1.jpg" alt="">
+                                    <input type="radio" name="participant-type" value="">
+                                    <span class="icon"><img src="images/icon-right-grey.svg"></span>
+                                </div>
+                            </li>
+                            <li class="col-6 col-md-4">
+                                <div class="wbSelectBannerCard">
+                                    <img src="images/Select-Banner-2.jpg" alt="">
+                                    <input type="radio" name="participant-type" value="">
+                                    <span class="icon"><img src="images/icon-right-grey.svg"></span>
+                                </div>
+                            </li>
+                            <li class="col-6 col-md-4">
+                                <div class="wbSelectBannerCard">
+                                    <img src="images/Select-Banner-3.jpg" alt="">
+                                    <input type="radio" name="participant-type" value="">
+                                    <span class="icon"><img src="images/icon-right-grey.svg"></span>
+                                </div>
+                            </li>
+                            <li class="col-6 col-md-4">
+                                <div class="wbSelectBannerCard">
+                                    <img src="images/Select-Banner-4.jpg" alt="">
+                                    <input type="radio" name="participant-type" value="">
+                                    <span class="icon"><img src="images/icon-right-grey.svg"></span>
+                                </div>
+                            </li>
+                            <li class="col-6 col-md-4">
+                                <div class="wbSelectBannerCard">
+                                    <img src="images/Select-Banner-5.jpg" alt="">
+                                    <input type="radio" name="participant-type" value="" checked="">
+                                    <span class="icon"><img src="images/icon-right-grey.svg"></span>
+                                </div>
+                            </li>
+                            <li class="col-6 col-md-4">
+                                <div class="wbSelectBannerCard">
+                                    <img src="images/Select-Banner-6.jpg" alt="">
+                                    <input type="radio" name="participant-type" value="">
+                                    <span class="icon"><img src="images/icon-right-grey.svg"></span>
+                                </div>
+                            </li>
+                        </ul>
+                      </div>
+                  </div>
+                  <div class="editGrayBox">                   
+                      <div class="form-group">
+                          <label for="">Replace Image</label>
+                          <div class="form-control inputUpload">
+                            <input id="myFile" type="file" capture="user" accept="image/*" >
+                            <span class="fileName">Upload file</span>
+                            <i class="icon-upload"></i>                          
+                          </div>
+                          <div class="validDataTxt">Only jpg format with file dimensions 480 x 480 px</div>
+                      </div>
+                  </div>
+                  <div class="editGrayBox">                   
+                      <div class="form-group">
+                          <label for="">Banner Heading</label>
+                          <input type="text" name="Banner Heading" class="form-control" placeholder="Health Care For Whole Family">
+                      </div>
+                  </div>
+                  <div class="editGrayBox">                   
+                      <div class="form-group">
+                          <label for="">Banner Content</label>
+                          <textarea class="form-textarea"></textarea>
+                          <div class="validDataTxt">80 words</div>
+                      </div>
+                  </div>                  
+              </div>
+              <div class="aboutClinicWrpr" style="display: none;">
+                <h2>About Clinic</h2>
+                <div class="editGrayBox">                   
+                    <div class="form-group marginBottom20">
+                        <label for="">Change Clinic Banner</label>
+                        <div class="form-control inputUpload">
+                          <input id="myFile" type="file" capture="user" accept="image/*" >
+                          <span class="fileName">Upload file</span>
+                          <i class="icon-upload"></i>
+                        </div>
+                    </div>
+                    <div class="form-group marginBottom20">
+                        <label for="">Banner Heading</label>
+                        <input type="text" name="Banner Heading" class="form-control" placeholder="Health Care For Whole Family">
+                    </div>                    
+                    <div class="form-group">
+                        <label for="">Banner Content</label>
+                        <textarea class="form-textarea"></textarea>
+                        <div class="validDataTxt">80 words</div>
+                    </div>
+                </div>
+                <div class="editGrayBox">
+                    <div class="inputCustamAttach">
+                       <div class="form-group"><label>Add photos of clinic <span class="addedCounter">01/10 added</span></label>
+                           <ul class="bkUploadedAttach">
+                               <li><img src="images/at-image-3.jpg"><span class="closeBtn"><img src="images/trasnparent-cross.svg"></span></li>                   
+                           </ul>
+                          <div class="inputFileField">
+                              <span><i class="icon-plus-circle"></i>Add more</span>
+                              <input type="file" name="">
+                          </div>
+                          <div class="validDataTxt text-right">Jpeg :  Max 300 kb</div>
+                      </div>
+                   </div>
+                </div>
+              </div>
+              <div class="specializationWrpr" style="display: none;">
+                <h2>Specialization</h2>
+                <div class="editGrayBox">                   
+                  <div class="form-group">
+                      <label for="">Sub Heading</label>
+                      <input type="text" name="Banner Heading" class="form-control" placeholder="Sub Heading">
+                  </div>
+                </div>
+                <div class="editGrayBox">  
+                  <div class="editGreyBoxTitle"><span>8 </span> Specialization added</div>
+                  <div id="sortable">
+                    <div class="editBoxShadow">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/specialization-img1.jpg" alt=""></div>
+                        <h4>Digestion <div class="subText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod .</div></h4>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/specialization-img2.jpg" alt=""></div>
+                        <h4>Anxiety  & tress<div class="subText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod .</div></h4>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/specialization-img3.jpg" alt=""></div>
+                        <h4>Kidney Problems<div class="subText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod .</div></h4>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/specialization-img4.jpg" alt=""></div>
+                        <h4>Flat Feet<div class="subText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod .</div></h4>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/specialization-img5.jpg" alt=""></div>
+                        <h4>Liver Problems<div class="subText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod .</div></h4>
+                        <label class="switchBtn">
+                          <input type="checkbox">
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/specialization-img6.jpg" alt=""></div>
+                        <h4>Arthritis<div class="subText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod .</div></h4>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/specialization-img7.jpg" alt=""></div>
+                        <h4>Weight Loss<div class="subText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod .</div></h4>
+                        <label class="switchBtn">
+                          <input type="checkbox">
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/specialization-img8.jpg" alt=""></div>
+                        <h4>Correct posture<div class="subText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod .</div></h4>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              <div class="teamWrpr" style="display: none;">
+                <h2>Team</h2>
+                <div class="editGrayBox">                   
+                  <div class="form-group">
+                      <label for="">Sub Heading</label>
+                      <input type="text" name="Banner Heading" class="form-control" placeholder="Sub Heading">
+                  </div>
+                </div>
+                <div class="editGrayBox">  
+                  <div class="editGreyBoxTitle"><span>4 </span>Team Member added</div>
+                  <div id="sortable2">
+                    <div class="editBoxShadow teamMemberCard">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/team-img1.png" alt=""></div>
+                        <h4>Dr. rohan Mehra <div class="subText">Digestion</div></h4>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow teamMemberCard">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/team-img1.png" alt=""></div>
+                        <h4>Dr. rohan Mehra <div class="subText">Digestion</div></h4>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow teamMemberCard">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/team-img1.png" alt=""></div>
+                        <h4>Dr. rohan Mehra <div class="subText">Digestion</div></h4>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow teamMemberCard">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/team-img1.png" alt=""></div>
+                        <h4>Dr. rohan Mehra <div class="subText">Digestion</div></h4>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="healthcareSerWrpr" style="display: none;">
+                <h2>Our Healthcare Services</h2>
+                <div class="editGrayBox">                   
+                  <div class="form-group">
+                      <label for="">Sub Heading</label>
+                      <input type="text" name="Banner Heading" class="form-control" placeholder="Sub Heading">
+                  </div>
+                </div>
+                <div class="editGrayBox">
+                    <div class="row">
+                        <div class="col-12 col-md-6 marginBottom20">
+                          <div class="form-group">
+                            <label for="">Service Name</label>
+                            <input type="text" name="Banner Heading" class="form-control" placeholder="Health Care For Whole Family">
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 marginBottom20">
+                            <div class="form-group">
+                                <label for="">Service Photo</label>
+                                <div class="form-control inputUpload">
+                                  <input id="myFile" type="file" capture="user" accept="image/*" >
+                                  <span class="fileName">Upload file</span>
+                                  <i class="icon-upload"></i>
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>
+                    <div class="text-center">
+                      <button class="button outlinePrimary">Add</button>
+                    </div> 
+                    <div class="serviceAddedBox">
+                        <div class="editGreyBoxTitle"><span>3</span>Service added</div>
+                        <div id="sortable3">
+                          <div class="editBoxShadow serviceAddCard">
+                              <span class="icon-drag-drop"></span>
+                              <div class="imageBox"><img src="images/service-added1.jpg" alt=""></div>
+                              <h4>Obstetric Care</h4>
+                              <div class="editAndDelete">
+                                <a href="#"><i class="edit icon-cal-pencil"></i></a>
+                                <a href="#"><i class="delete fas fa-trash"></i></a>
+                              </div>
+                          </div>
+                          <div class="editBoxShadow serviceAddCard">
+                              <span class="icon-drag-drop"></span>
+                              <div class="imageBox"><img src="images/service-added2.jpg" alt=""></div>
+                              <h4>Paediatric care</h4>
+                              <div class="editAndDelete">
+                                <a href="#"><i class="edit icon-cal-pencil"></i></a>
+                                <a href="#"><i class="delete fas fa-trash"></i></a>
+                              </div>
+                          </div>
+                          <div class="editBoxShadow serviceAddCard">
+                              <span class="icon-drag-drop"></span>
+                              <div class="imageBox"><img src="images/service-added3.jpg" alt=""></div>
+                              <h4>Palliative care</h4>
+                              <div class="editAndDelete">
+                                <a href="#"><i class="edit icon-cal-pencil"></i></a>
+                                <a href="#"><i class="delete fas fa-trash"></i></a>
+                              </div>
+                          </div>
+                          <div class="editBoxShadow serviceAddCard">
+                              <span class="icon-drag-drop"></span>
+                              <div class="imageBox"><img src="images/service-added4.jpg" alt=""></div>
+                              <h4>Surgery care and anaesthesia</h4>
+                              <div class="editAndDelete">
+                                <a href="#"><i class="edit icon-cal-pencil"></i></a>
+                                <a href="#"><i class="delete fas fa-trash"></i></a>
+                              </div>
+                          </div>
+                        </div>
+                    </div> 
+                </div>
+              </div>
+              <div class="testimonialsWrpr" style="display: none;">
+                <h2>Testimonials</h2>
+                <div class="editGrayBox">  
+                  <div class="editGreyBoxTitle"><span>6</span>Testimonials added</div>
+                  <div id="sortable4">
+                    <div class="editBoxShadow testimonialsCard">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/Amar-Singh-pp.png" alt=""></div>
+                            <div class="contentHolder">                              
+                              <div class="rating">
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star-white"></i></a>
+                              </div>
+                              <h4>Raghav Singh</h4>
+                              <div class="subText">Thyroid Patient</div>
+                              <div class="descp">Great service, great quality would recommend with nothing more, nothing less. Thank you Dr. Rohan for being so amazing.</div>
+                            </div>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow testimonialsCard">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/Amar-Singh-pp.png" alt=""></div>
+                            <div class="contentHolder">                             
+                              <div class="rating">
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star-white"></i></a>
+                              </div>
+                               <h4>Raghav Singh</h4>
+                              <div class="subText">Thyroid Patient</div>
+                              <div class="descp">Great service, great quality would recommend with nothing more, nothing less. Thank you Dr. Rohan for being so amazing.</div>
+                            </div>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow testimonialsCard">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/Amar-Singh-pp.png" alt=""></div>
+                            <div class="contentHolder">                              
+                              <div class="rating">
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star-white"></i></a>
+                              </div>
+                              <h4>Raghav Singh</h4>
+                              <div class="subText">Thyroid Patient</div>
+                              <div class="descp">Great service, great quality would recommend with nothing more, nothing less. Thank you Dr. Rohan for being so amazing.</div>
+                            </div>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow testimonialsCard">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/Amar-Singh-pp.png" alt=""></div>
+                            <div class="contentHolder">                              
+                              <div class="rating">
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star-white"></i></a>
+                              </div>
+                              <h4>Raghav Singh</h4>
+                              <div class="subText">Thyroid Patient</div>
+                              <div class="descp">Great service, great quality would recommend with nothing more, nothing less. Thank you Dr. Rohan for being so amazing.</div>
+                            </div>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow testimonialsCard">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/Amar-Singh-pp.png" alt=""></div>
+                            <div class="contentHolder">                              
+                              <div class="rating">
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star-white"></i></a>
+                              </div>
+                              <h4>Raghav Singh</h4>
+                              <div class="subText">Thyroid Patient</div>
+                              <div class="descp">Great service, great quality would recommend with nothing more, nothing less. Thank you Dr. Rohan for being so amazing.</div>
+                            </div>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow testimonialsCard">
+                        <span class="icon-drag-drop"></span>
+                        <div class="imageBox"><img src="images/Amar-Singh-pp.png" alt=""></div>
+                            <div class="contentHolder">                              
+                              <div class="rating">
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star"></i></a>
+                                <a href="#"><i class="icon-star-white"></i></a>
+                              </div>
+                              <h4>Raghav Singh</h4>
+                              <div class="subText">Thyroid Patient</div>
+                              <div class="descp">Great service, great quality would recommend with nothing more, nothing less. Thank you Dr. Rohan for being so amazing.</div>
+                            </div>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="FAQWrpr"  style="display: none;">
+                <h2>FAQ</h2>
+                <div class="editGrayBox">                   
+                  <div class="form-group">
+                      <label for="">Sub Heading</label>
+                      <input type="text" name="Banner Heading" class="form-control" placeholder="Sub Heading">
+                  </div>
+                </div>
+                <div class="editGrayBox">  
+                  <div class="editGreyBoxTitle"><span>4</span>FAQ added</div>
+                  <div id="sortable5">
+                    <div class="editBoxShadow faqCard">
+                        <span class="icon-drag-drop"></span>
+                        <div class="contentHolder">
+                          <h4>This is FAQ question followed by the answer…?</h4>
+                          <div class="subText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow faqCard">
+                        <span class="icon-drag-drop"></span>
+                        <div class="contentHolder">
+                          <h4>This is FAQ question followed by the answer…?</h4>
+                          <div class="subText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow faqCard">
+                        <span class="icon-drag-drop"></span>
+                        <div class="contentHolder">
+                          <h4>This is FAQ question followed by the answer…?</h4>
+                          <div class="subText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="editBoxShadow faqCard">
+                        <span class="icon-drag-drop"></span>
+                        <div class="contentHolder">
+                          <h4>This is FAQ question followed by the answer…?</h4>
+                          <div class="subText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                        <label class="switchBtn">
+                          <input type="checkbox" checked>
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="socialMediaWrpr" style="display: none;">
+                  <h2>Social Media</h2>
+                  <div class="editGrayBox">                   
+                      <div class="form-group marginBottom20">
+                          <div class="d-flex justify-content-between align-items-center">
+                              <label for="">Instagram Link</label>
+                              <label class="switchBtn">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                              </label>
+                          </div>
+                          <input type="text" name="Banner Heading" class="form-control" placeholder="Instagram Link">
+                      </div>
+                      <div class="form-group marginBottom20">
+                          <div class="d-flex justify-content-between align-items-center">
+                              <label for="">Facebook Link</label>
+                              <label class="switchBtn">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                              </label>
+                          </div>
+                          <input type="text" name="Banner Heading" class="form-control" placeholder="Facebook Link">
+                      </div>
+                      <div class="form-group marginBottom20">
+                          <div class="d-flex justify-content-between align-items-center">
+                              <label for="">Linkedin Link</label>
+                              <label class="switchBtn">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                              </label>
+                          </div>
+                          <input type="text" name="Banner Heading" class="form-control" placeholder="Linkedin Link">
+                      </div>
+                      <div class="form-group marginBottom20">
+                          <div class="d-flex justify-content-between align-items-center">
+                              <label for="">Youtube Link</label>
+                              <label class="switchBtn">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                              </label>
+                          </div>
+                          <input type="text" name="Banner Heading" class="form-control" placeholder="Youtube Link">
+                      </div>
+                  </div>
+                </div>
+            </div>
+             <div class="bottomButtons">
+                  <button type="button" class="button outlinePrimary">Cancel</button>
+                  <button type="button" class="button outlinePrimary">Save Draft</button>
+                  <button type="button" class="button">Submit</button>
+              </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+      $( function() {
+          $( "#sortable" ).sortable();
+          $( "#sortable" ).disableSelection();
+      });
+       $( function() {
+          $( "#sortable2" ).sortable();
+          $( "#sortable2" ).disableSelection();
+      });
+       $( function() {
+          $( "#sortable3" ).sortable();
+          $( "#sortable3" ).disableSelection();
+      });
+      $( function() {
+          $( "#sortable4" ).sortable();
+          $( "#sortable4" ).disableSelection();
+      });
+      $( function() {
+          $( "#sortable5" ).sortable();
+          $( "#sortable5" ).disableSelection();
+      });
+    </script>
+
+    <script type="text/javascript">
+      $("#myFile").change(function() {
+        var filename = $('input[type=file]').val().replace(/C:\\fakepath\\/i, '')
+        $('.fileName').text(filename);        
+      });
+    </script>
+
+    
+    <script type="text/javascript">
+      $(".editAboutMain .editAboutNav li").click(function(){
+         $(".editAboutMain .editAboutNav li a").removeClass('active');
+         $(this).find("a").addClass('active');
+         var x = $(this).index();
+         console.log(x);
+         $('.stepsParenet>div').hide();
+         $('.stepsParenet>div').eq(x).show();
+      })
+    </script>
+</body>
+
+</html>

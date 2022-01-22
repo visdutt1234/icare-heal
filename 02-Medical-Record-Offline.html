@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>0Medical Record Offline</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-2.css">
+</head>
+<body class="grayBg">
+	<header class="headerTop headerFull d-none d-sm-block">
+		<div class="row align-items-center">
+			<div class="col-3">
+				<a href="#"><img src="images/logo-small.svg" alt="" title="" />
+			</div>
+			<div class="col-9"> 
+			<ul>
+				<li>
+					<a href="#" data-toggle="modal" data-target="#faqModal"><i class="bi bi-question-circle-fill"></i></a>
+				</li>	
+				<li>
+					<a href="#" data-toggle="modal" data-target="#settingModal"><i class="bi bi-gear-fill"></i></a>
+				</li>
+				<li>
+					<a href="#" data-toggle="modal" data-target="#notificationModal"><i class="bi bi-bell-fill"></i></a>
+				</li>	
+				<li class="lang">
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="images/en.svg" alt="English" title="English" /> En</a>
+					  <div class="dropdown-menu">
+					    <a class="dropdown-item" href="#">Link 1</a>
+					    <a class="dropdown-item" href="#">Link 2</a>
+					    <a class="dropdown-item" href="#">Link 3</a>
+					  </div>
+				</li>
+				<li class="profileOption">
+					<a href="#" data-toggle="dropdown">
+						<span class="iconWithBg"><i class="bi bi-person-fill"></i></span>
+						<i class="bi bi-chevron-down"></i>
+					</a>
+					<div class="dropdown-menu">
+					    <a class="dropdown-item" href="#">Profile</a>
+					    <a class="dropdown-item" href="#">Link 2</a>
+					    <a class="dropdown-item" href="#">Link 3</a>
+					  </div>
+				</li> 
+			</ul>
+			</div>
+		</div> 
+	</header>
+
+	<div class="sideBlueMenu">
+		<ul class="adminMenu">
+			<li>
+				<a href="#"><i class="far fa-calendar-alt"></i>Calendar</a>
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-desktop"></i>Monitor</a> 
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-globe"></i>Website</a> 
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-folder-open"></i>Files</a> 
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-users"></i>Team</a> 
+			</li>
+			<li class="active">
+				<a href="#"><i class="fas fa-user-injured"></i>Patient</a> 
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-tenge"></i>More</a> 
+			</li>
+		</ul>
+	</div>
+
+	<div class="container medicalRecordWrpr">
+		<div class="wrapperBG">
+			<div class="medicalRecordBox">
+				<h1><a href="#" class="closeIcon"><img src="images/back-icon-close.svg"></a>Medical Record</h1>
+				<ul class="meetingType">
+                    <label>Your Preferred Mode</label>
+                    <li>
+                        <input type="radio" name="participant-type" value="Team">
+                        <span class="meetingIcon">
+                            <img src="images/Electronic-icon.jpg" alt="">
+                        </span>Electronic
+                    </li>
+                    <li>
+                        <input type="radio" name="participant-type" value="Patient">
+                        <span class="meetingIcon">
+                            <img src="images/Pen-Paper.jpg" alt="">
+                        </span>Pen & Paper
+                    </li>
+                </ul>
+                <div class="medicalReUpload">                	
+                	<div class="form-group">  
+                		<label class="title" for="customFile">Upload</label>              		
+						<div class="form-control" id="customFile">
+							<label class="form-label" for="customFile">Choose file</label>
+							<input type="file">
+							<span class="icon icon-file-attachment"></span>
+						</div>
+						<button type="button" class="uploadButton">Upload<i class="icon-upload"></i></button>
+					</div>
+                </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Notifications -->
+	<div class="modal right fade" id="notificationModal" tabindex="-1" role="dialog" aria-labelledby="notificationModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel2">Notifications</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+				</div>
+
+				<div class="modal-body">
+					<div class="notificationBar">
+						<div class="DateNotification">
+							<div class="days">Today</div>
+							<div class="notificationItem">
+								<div class="notiIcon"></div>
+								<div class="DD">
+									<h3>Notification Name 1</h3>
+									<span>10:17PM</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+								</div>	
+							</div>
+							<div class="notificationItem">
+								<div class="notiIcon"></div>
+								<div class="DD">
+									<h3>Notification Name 1</h3>
+									<span>10:17PM</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+								</div>	
+							</div>
+						</div>
+						<div class="DateNotification">
+							<div class="days">Yesterday</div>
+							<div class="notificationItem">
+								<div class="notiIcon"></div>
+								<div class="DD">
+									<h3>Notification Name 1</h3>
+									<span>10:17PM</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+								</div>	
+							</div> 
+						</div>
+					</div>
+				</div>
+
+			</div><!-- modal-content -->
+		</div><!-- modal-dialog -->
+	</div><!-- Modal Notifications -->
+
+	<!-- Modal FAQs -->
+	<div class="modal right fade" id="faqModal" tabindex="-1" role="dialog" aria-labelledby="faqModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<h4 class="modal-title">FAQs</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+				</div>
+
+				<div class="modal-body">
+					<div class="faqBar">
+						<div class="searchitems normalSearch">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fas fa-search"></i></span>
+								</div>
+								<input type="text" class="form-control" placeholder="Search">
+								<div class="searchList">
+									<ul class="autocomplete-items-list" role="listbox" style="max-height: 190px;">
+										<li data-mdb-index="0" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li>
+										<li data-mdb-index="1" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li> 
+										<li data-mdb-index="1" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li> 
+										<li data-mdb-index="1" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li> 
+									</ul>
+								</div>	
+							</div>
+						</div>
+
+						<div class="questionTitle">Select Question</div>
+						<div class="selectSearch">Loremipsim dolor sis sit met</div>
+						<ul class="faqList">
+							<li>
+								<h3>This is FAQ question followed by the answer…?</h3>
+								<p>This is thr answer of the above question in detail and explain the question asked in 2 to 4 lines of paragraph.</p>
+							</li>
+							<li>
+								<h3>This is FAQ question followed by the answer…?</h3>
+								<p>This is thr answer of the above question in detail and explain the question asked in 2 to 4 lines of paragraph.</p>
+							</li>
+							<li>
+								<h3>This is FAQ question followed by the answer…?</h3>
+								<p>This is thr answer of the above question in detail and explain the question asked in 2 to 4 lines of paragraph.</p>
+							</li>
+							<li>
+								<h3>This is FAQ question followed by the answer…?</h3>
+								<p>This is thr answer of the above question in detail and explain the question asked in 2 to 4 lines of paragraph.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div><!-- modal-content -->
+		</div><!-- modal-dialog -->
+	</div><!-- Modal FAQs -->
+
+	<!-- Modal Setting -->
+	<div class="modal right fade" id="settingModal" tabindex="-1" role="dialog" aria-labelledby="settingModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<h4 class="modal-title">Setting</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+				</div>
+
+				<div class="modal-body">
+					<div class="faqBar">
+						<div class="searchitems normalSearch">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fas fa-search"></i></span>
+								</div>
+								<input type="text" class="form-control" placeholder="Search">
+								<div class="searchList">
+									<ul class="autocomplete-items-list" role="listbox" style="max-height: 190px;">
+										<li data-mdb-index="0" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li>
+										<li data-mdb-index="1" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li> 
+										<li data-mdb-index="1" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li> 
+										<li data-mdb-index="1" role="option" class="autocomplete-item">
+											<a href="#">Doctor <span>Lorem ipsum</span></a>
+										</li> 
+									</ul>
+								</div>	
+							</div>
+						</div>
+
+						<ul class="menuList">
+							<li>
+								<a href="#">Account <i class="fas fa-chevron-right"></i></a>
+							</li>
+							<li>
+								<a href="#">General <i class="fas fa-chevron-right"></i></a>
+							</li>
+							<li>
+								<a href="#">Team <i class="fas fa-chevron-right"></i></a>
+							</li>
+							<li>
+								<a href="#">Calendar <i class="fas fa-chevron-right"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div><!-- modal-content -->
+		</div><!-- modal-dialog -->
+	</div><!-- Modal Setting -->	
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>  
+			  
+</body>
+</html>

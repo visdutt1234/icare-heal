@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar - Calendar Day View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-2.css">
+</head>
+
+<body class="grayBg">
+    <header class="headerTop headerFull">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <a href="#"><img src="images/logo-small.svg" alt="" title="" />
+            </div>
+            <div class="col-9">
+                <ul>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#faqModal"><i
+                                class="bi bi-question-circle-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#settingModal"><i class="bi bi-gear-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#notificationModal"><i
+                                class="bi bi-bell-fill"></i></a>
+                    </li>
+                    <li class="lang">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="images/en.svg"
+                                alt="English" title="English" /> En</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="profileOption">
+                        <a href="#" data-toggle="dropdown">
+                            <span class="iconWithBg"><i class="bi bi-person-fill"></i></span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="sideBlueMenu">
+        <ul class="adminMenu">
+            <li class="active">
+                <a href="#"><i class="far fa-calendar-alt"></i>Calendar</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-desktop"></i>Monitor</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-globe"></i>Website</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-folder-open"></i>Files</a>
+            </li>
+            <li class="active">
+                <a href="#"><i class="fas fa-users"></i>Team</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-user-injured"></i>Patient</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-tenge"></i>More</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container CalendarWrpr">
+        <div class="wrapperBG">
+            <div class="filterTop">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-lg-3 col-md-3">
+                            <div class="monthSlider">
+                                <a href="#" class="msPrev"></a>
+                                <a href="#" class="months">Feb <span>2021</span></a>
+                                <a href="#" class="msNext"></a>
+                            </div>
+                        </div>
+                        <div class="col-6 d-none d-block d-sm-none">
+                            <ul class="actions">
+                                <li><img src="images/cal-search-icon.svg"></li>
+                                <li><img src="images/meet-video-icon-black.svg"></li>
+                                <li>
+                                    <div class="dropdown dropleft">
+                                        <span id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false"><img src="images/cal-menu-icon.svg"></span>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Schedule-icon.svg"></span>Schedule</a>
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Day-icon.svg"></span>Day</a>
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Week-icon.svg"></span>Week</a>
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Month-icon.svg"></span>Month</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-9 col-md-9 d-none d-sm-block">
+                            <ul class="actions">
+                                <li class="searchitems normalSearch">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control searchText" placeholder="Search">
+                                        <div class="searchList">
+                                            <ul class="autocomplete-items-list" role="listbox"
+                                                style="max-height: 190px;">
+                                                <li data-mdb-index="0" role="option" class="autocomplete-item">
+                                                    <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                                </li>
+                                                <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                                    <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                                </li>
+                                                <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                                    <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                                </li>
+                                                <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                                    <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn calBtn-secondary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Day</button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Schedule-icon.svg"></span>Schedule</a>
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Day-icon.svg"></span>Day</a>
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Week-icon.svg"></span>Week</a>
+                                            <a class="dropdown-item" href="#"><span class="icon"><img
+                                                        src="images/cal-Month-icon.svg"></span>Month</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-outline-primary calBtn-outline"><span
+                                            class="icon fas fa-video"></span>Meet Now</button>
+                                </li>
+                                <li><button type="button" class="btn btn-primary calBtn-primary" data-toggle="modal" data-target="#scheduleMeetingModal">+ New Schedule</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calendardays calendarWeeKView calendarDayView clearfix open_modal slideInUp wow"
+                data-wow-duration="1s" data-wow-offset="10"
+                style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
+                <div class="dayname">
+                    <ul class="clearfix">
+                        <li><span class="calDays">Monday</span>
+                            <div class="text-center"><span class="dateValue">31</span></div>
+                        </li>
+                        <li><span class="calDays">Tuesday</span>
+                            <div class="text-center"><span class="dateValue">1</span></div>
+                        </li>
+                        <li><span class="calDays">Wednesday</span>
+                            <div class="text-center"><span class="dateValue">2</span></div>
+                        </li>
+                        <li class="active"><span class="calDays">Thursday</span>
+                            <div class="text-center"><span class="dateValue">3</span></div>
+                        </li>
+                        <li><span class="calDays">Friday</span>
+                            <div class="text-center"><span class="dateValue">4</span></div>
+                        </li>
+                        <li><span class="calDays">Saturday</span>
+                            <div class="text-center"><span class="dateValue">5</span></div>
+                        </li>
+                        <li><span class="calDays">Sunday</span>
+                            <div class="text-center"><span class="dateValue">6</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="thin_scroll calendarScroll">
+                    <div class="monthbox monthboxTable clearfix"> 
+                        <ul class="monthboxRow dayboxRow">
+                            <li class="time"></li>                
+                            <li></li>
+                        </ul>
+                        <ul class="monthboxRow dayboxRow">
+                            <li class="time"><span>08 AM</span></li>
+                            <li>
+                                <a href="javascript:void(0)" class="calUserBlock calUserBgBlock callUserWtIcon border-left-purple calVvideoCol">
+                                    <span class="schedulesIcon"><i class="icon fas fa-video"></i></span>
+                                    <span class="userName">Anamika</span>
+                                    <span class="userTime">02:00 - 03:00 PM</span>
+                                    <span class="userTreatMent">Laser Skin Resurfacing</span>                            
+                                </a>
+                                <a href="javascript:void(0)" class="calUserBlock calUserBgBlock callUserWtIcon border-left-purple calVvideoCol">
+                                    <span class="schedulesIcon"><i class="icon fas fa-video"></i></span>
+                                    <span class="userName">Anamika</span>
+                                    <span class="userTime">02:00 - 03:00 PM</span>
+                                    <span class="userTreatMent">Laser Skin Resurfacing</span>                            
+                                </a>
+                                <a href="javascript:void(0)" class="calUserBlock calUserBgBlock callUserWtIcon border-left-purple calVvideoCol">
+                                    <span class="schedulesIcon"><i class="icon fas fa-video"></i></span>
+                                    <span class="userName">Anamika</span>
+                                    <span class="userTime">02:00 - 03:00 PM</span>
+                                    <span class="userTreatMent">Laser Skin Resurfacing</span>                            
+                                </a>
+                                <a href="javascript:void(0)" class="calUserBlock calUserBgBlock callUserWtIcon border-left-purple calVvideoCol">
+                                    <span class="schedulesIcon"><i class="icon fas fa-video"></i></span>
+                                    <span class="userName">Anamika</span>
+                                    <span class="userTime">02:00 - 03:00 PM</span>
+                                    <span class="userTreatMent">Laser Skin Resurfacing</span>                            
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="monthboxRow dayboxRow">
+                            <li class="time"><span>09</span></li><li></li>
+                        </ul>
+                        <ul class="monthboxRow dayboxRow">
+                            <li class="time"><span>10</span></li><li></li>
+                        </ul>
+                        <ul class="monthboxRow dayboxRow">
+                            <li class="time"><span>11</span></li><li></li>
+                        </ul>
+                        <ul class="monthboxRow dayboxRow">
+                            <li class="time"><span>12 PM</span></li><li></li>
+                        </ul>
+                        <ul class="monthboxRow dayboxRow">
+                            <li class="time"><span>01</span></li><li></li>
+                        </ul>
+                        <ul class="monthboxRow dayboxRow">
+                            <li class="time"><span>02</span>
+                            <li>
+                                <a href="javascript:void(0)" class="calUserBlock calUserBgBlock  callUserWtIcon border-left-skyBlue calPhisycleCol">
+                                    <span class="schedulesIcon"><i class="fas fa-phone-alt"></i></span>
+                                    <span class="userName">Raju Sain</span>
+                                    <span class="userTime">09:00 - 10:00 AM </span>
+                                    <span class="userTreatMent">Skin Treatment</span>
+                                    <button class="calJoinNow">Join Now</button>
+                                </a>
+                                <a href="javascript:void(0)" class="calUserBlock calUserBgBlock  callUserWtIcon border-left-skyBlue calPhisycleCol">
+                                    <span class="schedulesIcon"><i class="fas fa-phone-alt"></i></span>
+                                    <span class="userName">Raju Sain</span>
+                                    <span class="userTime">09:00 - 10:00 AM </span>
+                                    <span class="userTreatMent">Skin Treatment</span>
+                                    <button class="calJoinNow">Join Now</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                <div class="thin_scroll calendarScroll">
+            </div>
+        </div>
+    </div>
+    <a href="#" class="seducleFloting" data-toggle="modal" data-target="#scheduleMeetingModal"><i class="fas fa-plus"></i></a>
+
+    <!-- Modal Notifications -->
+    <div class="modal right fade" id="notificationModal" tabindex="-1" role="dialog"
+        aria-labelledby="notificationModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel2">Notifications</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="notificationBar">
+                        <div class="DateNotification">
+                            <div class="days">Today</div>
+                            <div class="notificationItem">
+                                <div class="notiIcon"></div>
+                                <div class="DD">
+                                    <h3>Notification Name 1</h3>
+                                    <span>10:17PM</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="notificationItem">
+                                <div class="notiIcon"></div>
+                                <div class="DD">
+                                    <h3>Notification Name 1</h3>
+                                    <span>10:17PM</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="DateNotification">
+                            <div class="days">Yesterday</div>
+                            <div class="notificationItem">
+                                <div class="notiIcon"></div>
+                                <div class="DD">
+                                    <h3>Notification Name 1</h3>
+                                    <span>10:17PM</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- Modal Notifications -->
+
+    <!-- Modal FAQs -->
+    <div class="modal right fade" id="faqModal" tabindex="-1" role="dialog" aria-labelledby="faqModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">FAQs</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="faqBar">
+                        <div class="searchitems normalSearch">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="searchList">
+                                    <ul class="autocomplete-items-list" role="listbox" style="max-height: 190px;">
+                                        <li data-mdb-index="0" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                        <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                        <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                        <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="questionTitle">Select Question</div>
+                        <div class="selectSearch">Loremipsim dolor sis sit met</div>
+                        <ul class="faqList">
+                            <li>
+                                <h3>This is FAQ question followed by the answer…?</h3>
+                                <p>This is thr answer of the above question in detail and explain the question asked in
+                                    2 to 4 lines of paragraph.</p>
+                            </li>
+                            <li>
+                                <h3>This is FAQ question followed by the answer…?</h3>
+                                <p>This is thr answer of the above question in detail and explain the question asked in
+                                    2 to 4 lines of paragraph.</p>
+                            </li>
+                            <li>
+                                <h3>This is FAQ question followed by the answer…?</h3>
+                                <p>This is thr answer of the above question in detail and explain the question asked in
+                                    2 to 4 lines of paragraph.</p>
+                            </li>
+                            <li>
+                                <h3>This is FAQ question followed by the answer…?</h3>
+                                <p>This is thr answer of the above question in detail and explain the question asked in
+                                    2 to 4 lines of paragraph.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- Modal FAQs -->
+
+    <!-- Modal Setting -->
+    <div class="modal right fade" id="settingModal" tabindex="-1" role="dialog" aria-labelledby="settingModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Setting</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="faqBar">
+                        <div class="searchitems normalSearch">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="searchList">
+                                    <ul class="autocomplete-items-list" role="listbox" style="max-height: 190px;">
+                                        <li data-mdb-index="0" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                        <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                        <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                        <li data-mdb-index="1" role="option" class="autocomplete-item">
+                                            <a href="#">Doctor <span>Lorem ipsum</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="menuList">
+                            <li>
+                                <a href="#">Account <i class="fas fa-chevron-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">General <i class="fas fa-chevron-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">Team <i class="fas fa-chevron-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">Calendar <i class="fas fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- Modal Setting -->
+    <div class="overlay d-none"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>

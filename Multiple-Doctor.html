@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-2.css">
+</head>
+
+<body class="grayBg">
+    <header class="headerTop headerFull">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <a href="#"><img src="images/logo-small.svg" alt="" title="" />
+            </div>
+            <div class="col-9">
+                <ul>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#faqModal"><i
+                                class="bi bi-question-circle-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#settingModal"><i class="bi bi-gear-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#notificationModal"><i
+                                class="bi bi-bell-fill"></i></a>
+                    </li>
+                    <li class="lang">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="images/en.svg"
+                                alt="English" title="English" /> En</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="profileOption">
+                        <a href="#" data-toggle="dropdown">
+                            <span class="iconWithBg"><i class="bi bi-person-fill"></i></span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="sideBlueMenu">
+        <ul class="adminMenu">
+            <li class="active">
+                <a href="#"><i class="far fa-calendar-alt"></i>Calendar</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-desktop"></i>Monitor</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-globe"></i>Website</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-folder-open"></i>Files</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-users"></i>Team</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-user-injured"></i>Patient</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-tenge"></i>More</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="rightSideContainer">
+        <div class="wbTopEditStrip">
+            <div class="wbContainer">
+                <div class="wbSrtipEditBox">
+                    <span class="wbSeoTag" id="wbSeoTagID"><i class="icon-wb-seo-tag"></i>SEO Tag</span>
+                    <span class="editStripIcon" id="chooseWbColorId"><img class="wb-color-icon" src="images/wb-color.svg" alt=""></span>
+                    <span class="editStripIcon" id="wbPagesID"><img src="images/wb-icon-full.svg"></span>
+                    <a class="editStripIcon" href="01-Edit-About.html"><i class="icon-cal-pencil"></i></a>                
+                    <span class="editStripIcon editResonsiveIcon"><i class="icon-smartphone-call"></i><i class="icon-monitor"></i></span>
+                </div>
+                <div class="wbSrtipBtnBox">
+                    <button id="saveBtnID" class="EditStripSaveBtn">Save</button>
+                    <button id="publishbtnId"><i class="icon-Path-18"></i> Publish</button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_View_template"><iframe class="website_builder_iframe" src="website/Multiple-Doctor.html"></iframe></div>
+    </div>
+
+     <!-- Seo Tag PopUp Start here-->
+    <div class="editPopupContainer SeoTagPopUp hide" id="wbSeoTagPopUp">
+        <div class="editPopupBox">
+            <span class="closeBtn" title="close"><i class="icon-wb-close-icon"></i></span>
+            <h4>Seo Tag</h4>
+            <div class="form-group">
+                <label for="">HTML page title</label>
+                <span class="wbWordCounter">75 Words</span>
+                <textarea class="form-control" placeholder="Enter Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </textarea>
+            </div>
+            <div class="form-group">
+                <label for="">Meta tags</label>
+                <span class="wbWordCounter">120 Words</span>
+                <textarea class="form-control" placeholder="Enter Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </textarea>
+            </div>
+            <div class="text-center"><button class="wbSaveButton">save</button></div>
+        </div>
+    </div>
+    <!-- Seo Tag PopUp Start here-->
+
+    <!-- Choose Color PopUp Start here-->
+    <div class="editPopupContainer wbColorPopup hide" id="chooseWbColorPopUpId">
+        <div class="editPopupBox">
+            <span class="closeBtn" title="close"><i class="icon-wb-close-icon"></i></span>
+            <h4>Choose Color</h4>
+            <div class="wbSelectColorBox">
+                <ul class="selectColor">
+                    <li>
+                        <input type="radio" name="color" value="" style="background-color: #3281ff;">
+                        <span class="icon"><img src="images/icon-right-white.svg"></span>
+                    </li>
+                    <li>
+                        <input type="radio" name="color" value="" style="background-color: #01a0aa;" checked="">
+                        <span class="icon"><img src="images/icon-right-white.svg"></span>
+                    </li>
+                    <li>
+                        <input type="radio" name="color" value="" style="background-color: #1aa651;">
+                        <span class="icon"><img src="images/icon-right-white.svg"></span>
+                    </li>
+                    <li>
+                        <input type="radio" name="color" value="" style="background-color: #fd69fa;">
+                        <span class="icon"><img src="images/icon-right-white.svg"></span>
+                    </li>
+                    <li>
+                        <input type="radio" name="color" value="" style="background-color: #ff7d91;">
+                        <span class="icon"><img src="images/icon-right-white.svg"></span>
+                    </li>
+                    <li>
+                        <input type="radio" name="color" value="" style="background-color: #ff9107;">
+                        <span class="icon"><img src="images/icon-right-white.svg"></span>
+                    </li>
+                </ul>
+                <div class="selectedColorBox">
+                    Bottled Mint Green <span style="background-color: #01a0aa;" class="selectedColor"></span>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="wbPrimaryBtn">Preview</button>
+                <button class="wbSaveButton">save</button>
+            </div>
+        </div>
+    </div>
+    <!-- Choose Color PopUp Start here-->
+
+    <!--Pages PopUp Start here-->
+    <div class="editPopupContainer wbPagesPopUp hide" id="wbPagesPopUpID">
+        <div class="editPopupBox">
+            <span class="closeBtn" title="close"><i class="icon-wb-close-icon"></i></span>
+            <h4>Pages<a href="#" class="wbAddPage"><i class="icon-plus"></i></a></h4>
+            <div class="wbPagesItem">                
+                <input type="checkbox" name="checkbox" value="">
+                <label>About Clinic</label>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-eye-slash"></i>
+            </div>
+            <div class="wbPagesItem">                
+                <input type="checkbox" name="checkbox" value="">
+                <label>Specialization</label>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-eye-slash"></i>
+            </div>
+            <div class="wbPagesItem">                
+                <input type="checkbox" name="checkbox" value="">
+                <label>Service</label>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-eye-slash"></i>
+            </div>
+            <div class="wbPagesItem">                
+                <input type="checkbox" name="checkbox" value="">
+                <label>Testionials</label>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-eye-slash"></i>
+            </div>
+            <div class="wbPagesItem">                
+                <input type="checkbox" name="checkbox" value="" checked>
+                <label>Contact Us</label>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-eye-slash"></i>
+            </div>
+            <div class="wbpageDragInfo">
+                <ul>
+                    <li><i class="icon-info"></i>Drag pages up/down to reorder and left/right to create subpages</li>
+                    <li><i class="icon-info"></i>Hide icon will hide that section from your Website</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Pages PopUp Start here-->
+
+    <!-- Publish PopUp Start here-->
+    <div class="editPopupContainer wbPublishPopup hide" id="SavingChangesPopUp">
+        <div class="editPopupBox">
+            <span class="closeBtn" title="close"><i class="icon-wb-close-icon"></i></span>
+            <div class="text-center"><img src="images/floppy_disk.svg"></div>
+            <h2 class="text-center">Saving Changes</h2>
+            <p class="text-center">Saving changes offline, it will not be shown in Live website until you publish it.</p>
+            <div class="text-center">
+                <button class="wbPrimaryBtn">Discard</button>
+                <button class="wbSaveButton">Save</button>
+            </div>
+        </div>
+    </div>
+    <!-- Publish PopUp Start here-->
+
+    <!-- Publish PopUp Start here-->
+    <div class="editPopupContainer wbPublishPopup hide" id="publishPopUpID">
+        <div class="editPopupBox">
+            <span class="closeBtn" title="close"><i class="icon-wb-close-icon"></i></span>
+            <div class="text-center"><img src="images/wb-live.svg"></div>
+            <h2 class="text-center">Hooray!! Going live</h2>
+            <p class="text-center">Publish action will make your website go live with the current Design.</p>
+            <div class="text-center">
+                <button class="wbPrimaryBtn">Preview</button>
+                <button class="wbSaveButton">Publish</button>
+            </div>
+        </div>
+    </div>
+    <!-- Publish PopUp Start here-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+        $('#wbSeoTagID').click(function (event) {
+            $('#wbSeoTagPopUp').removeClass('hide');
+            $('#wbSeoTagPopUp .closeBtn').click(function (event) {
+                $('#wbSeoTagPopUp').addClass('hide');
+            });
+        });
+        $('#chooseWbColorId').click(function (event) {
+            $('#chooseWbColorPopUpId').removeClass('hide');
+            $('#chooseWbColorPopUpId .closeBtn').click(function (event) {
+                $('#chooseWbColorPopUpId').addClass('hide');
+            });
+        });
+        $('#wbPagesID').click(function (event) {
+            $('#wbPagesPopUpID').removeClass('hide');
+            $('#wbPagesPopUpID .closeBtn').click(function (event) {
+                $('#wbPagesPopUpID').addClass('hide');
+            });
+        });
+        $('#saveBtnID').click(function (event) {
+            $('#SavingChangesPopUp').removeClass('hide');
+            $('#SavingChangesPopUp .closeBtn').click(function (event) {
+                $('#SavingChangesPopUp').addClass('hide');
+            });
+        });
+        $('#publishbtnId').click(function (event) {
+            $('#publishPopUpID').removeClass('hide');
+            $('#publishPopUpID .closeBtn').click(function (event) {
+                $('#publishPopUpID').addClass('hide');
+            });
+        });
+
+        $('.editResonsiveIcon').click(function(){
+            $('.rightSideContainer').toggleClass('mobile_View_Responsive');
+        })        
+    </script>
+
+</body>
+
+</html>
